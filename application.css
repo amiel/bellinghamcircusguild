@@ -1,107 +1,56 @@
-#wpadminbar {
-  display: none; }
+#navbar { width: 100%; background: #000; color: #2dc4ff; }
+#navbar a { color: #2dc4ff; }
+
+#wpadminbar { display: none; }
 
 /* Basic Layout */
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  margin: 10px auto;
-  width: 960px; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 10px auto; width: 960px; }
 
-#wrapper {
-  clear: both; }
+#wrapper { clear: both; }
 
-#main {
-  float: left;
-  width: 700px; }
+#main { float: left; width: 700px; }
 
-#sidebar {
-  float: right;
-  width: 200px; }
+#sidebar { float: right; width: 200px; }
 
-#footer {
-  clear: both; }
+#footer { clear: both; }
 
 /* Top Menu */
-#header .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+#header .menu ul { list-style-type: none; margin: 0; padding: 0; }
 
-#header .menu ul li {
-  float: left;
-  margin: 0;
-  padding: 0; }
+#header .menu ul li { float: left; margin: 0; padding: 0; }
 
-#header .menu ul li:hover {
-  background: #ddd; }
+#header .menu ul li:hover { background: #ddd; }
 
-#header .menu a {
-  display: block;
-  padding: .25em 1em; }
+#header .menu a { display: block; padding: .25em 1em; }
 
-#header .menu ul ul {
-  background: #eee;
-  display: none;
-  position: absolute; }
+#header .menu ul ul { background: #eee; display: none; position: absolute; }
 
-#header .menu ul ul li {
-  float: none; }
+#header .menu ul ul li { float: none; }
 
-#header .menu ul li:hover ul {
-  display: block; }
+#header .menu ul li:hover ul { display: block; }
 
 /* Posts */
-div.post {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding-bottom: 10px; }
+div.post { border-bottom: 1px solid #ccc; margin-bottom: 10px; padding-bottom: 10px; }
 
-ul.metadata {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+ul.metadata { list-style-type: none; margin: 0; padding: 0; }
 
-ul.metadata li {
-  display: inline;
-  margin: 0;
-  padding: 0 10px 0 0; }
+ul.metadata li { display: inline; margin: 0; padding: 0 10px 0 0; }
 
 /* Sidebar */
-#sidebar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+#sidebar ul { list-style-type: none; margin: 0; padding: 0; }
 
 /* Images */
-img.alignnone {
-  display: block;
-  margin: 10px 0; }
+img.alignnone { display: block; margin: 10px 0; }
 
-img.aligncenter {
-  display: block;
-  margin: 10px auto; }
+img.aligncenter { display: block; margin: 10px auto; }
 
-img.alignleft {
-  float: left;
-  margin: 10px 10px 10px 0; }
+img.alignleft { float: left; margin: 10px 10px 10px 0; }
 
-img.alignright {
-  float: right;
-  margin: 10px 0 10px 10px; }
+img.alignright { float: right; margin: 10px 0 10px 10px; }
 
 /* Footer */
-#footer {
-  border-top: 4px solid #ccc;
-  clear: both;
-  font-size: .8em;
-  padding-top: 10px; }
+#footer { border-top: 4px solid #ccc; clear: both; font-size: .8em; padding-top: 10px; }
 
-#footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
+#footer ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
 
-#footer ul li {
-  display: inline;
-  padding: 0 1em; }
+#footer ul li { display: inline; padding: 0 1em; }
