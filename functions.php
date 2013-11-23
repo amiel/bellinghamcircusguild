@@ -1,6 +1,19 @@
 <?php
 // functions.php isn't a template, but defines your theme's configuration and allows you to add custom functions you can use other places
 
+require_once('vernacular/bootstrap.php');
+
+function register_custom_post_types() {
+  $event = new VernacularPostType('event');
+  $event->register();
+
+  $class = new VernacularPostType('class');
+  $class->labels('Class', 'Classes');
+  $class->register();
+}
+add_action('init', 'register_custom_post_types');
+
+
 // Register a sidebar
 if ( function_exists( 'register_sidebar' ) ) {
   register_sidebar( array(
@@ -28,11 +41,4 @@ function apprentice_register_menus() {
   );
 }
 
-
-// Remove rel attribute from the category list (fixes HTML5 validation)
-function remove_category_list_rel($output){
-  return str_replace(' rel="category"', '', $output);
-}
-add_filter('wp_list_categories', 'remove_category_list_rel');
-add_filter('the_category', 'remove_category_list_rel');
 ?>
