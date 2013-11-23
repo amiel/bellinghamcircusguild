@@ -1,0 +1,4 @@
+.git
+Guardfile
+.rsync-filter
+*.scss
