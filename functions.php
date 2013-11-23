@@ -7,8 +7,8 @@ function register_custom_post_types() {
   $event = new VernacularPostType('event');
   $event->register();
 
-  $class = new VernacularPostType('class');
-  $class->labels('Class', 'Classes');
+  $class = new VernacularPostType('workshop');
+  // $class->labels('Class', 'Classes');
   $class->register();
 }
 add_action('init', 'register_custom_post_types');

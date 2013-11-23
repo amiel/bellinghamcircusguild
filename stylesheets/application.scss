@@ -1,13 +1,21 @@
+@import "vendor/normalize";
+@import "fonts/markus_ink";
+
 @import "bourbon";
 
-$that_blue_color: #2dc4ff;
+$accent-color: #2dc4ff;
+$highlight-color: #fbee1b;
 
-#navbar{
-  width: 100%;
-  background: #000;
-  color: $that_blue_color;
-  a { color: $that_blue_color; }
-}
+$site-width: 960px;
+
+$footer-nav-height: 38px;
+$sub-footer-height: 52px;
+$footer-height: $footer-nav-height + $sub-footer-height;
 
 #wpadminbar{ display: none; }
 
+@import "modules/typeography";
+
+@import "layout/general";
+@import "layout/header";
+@import "layout/footer";

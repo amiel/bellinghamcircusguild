@@ -1,15 +1,22 @@
-<!-- begin footer.php -->
   </div>
-  <!-- end #wrapper -->
 
-  <!-- Begin #footer -->
-  <div id="footer">
-  <?php // This will output the menu you create and assign to the 'Footer Menu' position in the admin; otherwise, it will output a Home link and links to each top-level page ?>
-  <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'footer-menu', 'depth' => 1 ) ); ?>
+  <footer class="page">
+    <nav>
+      <?php wp_nav_menu(array('container_class' => 'menu', 'theme_location' => 'footer-menu', 'depth' => 1)); ?>
+    </nav>
 
-  <?php // wp_footer(); allows plugins to insert content into the footer as needed -- similar to wp_head(); ?>
+    <section id="sub-footer">
+      <div class="container">
+        <span class="address">1401 6th Street, Suite 102, Bellingham, WA, 98225</span>
+        <a href="" class="directions">Get Directions</a>
+        <a href="mailto:info@bellinghamcircusguild.com" class="email">
+          info@bellinghamcircusguild.com
+        </a>
+        <span class="copyright">&copy;Copyright 2013, Bellingham Circus Guild</span>
+      </div>
+    </section>
+  </footer>
+
   <?php wp_footer(); ?>
-  </div>
-  <!-- end #footer -->
 </body>
 </html>
