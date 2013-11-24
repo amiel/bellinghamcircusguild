@@ -17,15 +17,9 @@
 
 <body <?php body_class(); ?>>
   <div id="navbar">
-    <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'header-menu' ) ); ?>
+    <?php wp_nav_menu(array('container_class' => 'menu', 'theme_location' => 'header-menu')); ?>
   </div>
 
-  <div id="header">
-    <h1 id="logo">
-      <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
-    </h1>
-
-  </div>
-
-  <div id="wrapper">
-
+  <h1 id="logo">
+    <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
+  </h1>

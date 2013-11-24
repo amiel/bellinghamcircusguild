@@ -3,15 +3,18 @@ html, body{
   height: 100%;
 }
 
-// Open Sans
-// Markus Ink
-// Book Antigua -> Georgia
-
 body{
   padding-bottom: $footer-height;
+  background-color: $background-color;
+  color: $text-color;
 }
 
 .container{
   margin: 0 auto;
   width: $site-width;
+}
+
+#main{
+  padding-top: $header-height;
+  @extend .container;
 }

@@ -1,7 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 @import "../fonts/markus_ink";
 
-h2{ font-family: markus_inkregular; }
+@mixin markus($font-size: 1em) {
+  font-family: markus_inkregular;
+  font-size: $font-size;
+  letter-spacing: 0.1em;
+}
+
+h2{ @include markus; }
+
+
+// Open Sans
+// Markus Ink
+// Book Antigua -> Georgia
+
 
 // Temporary
 .sans{ font-family: 'Open Sans', sans-serif; }

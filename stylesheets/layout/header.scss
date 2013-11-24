@@ -1,7 +1,77 @@
 
 #navbar{
+  position: fixed;
+  top: 0;
+  height: $navbar-height;
   width: 100%;
-  background: #000;
-  color: $accent-color;
-  a { color: $accent-color; }
+  background: $background-color;
+  div.menu{ @extend .container; }
+
+  ul{
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li{
+      float: left;
+      @include markus(1.5em);
+
+      a{
+        color: $accent-color;
+        text-decoration: none;
+        text-align: center;
+        line-height: $navbar-height;
+        height: $navbar-height;
+        width: 100%;
+      }
+
+      a:hover{ color: $highlight-color; }
+    }
+
+    li:after{
+      content: "/";
+      color: $accent-color;
+      padding: 0 16px;
+    }
+
+    li:last-child:after{ content: ""; padding: 0; }
+  }
+}
+
+h1#logo{
+  @extend .container;
+  a{
+    z-index: 20;
+    display: block;
+    position: fixed;
+    top: -16px;
+    @include hide-text;
+
+    // Temporary
+    width: $logo-size;
+    height: $logo-size;
+
+    background-color: #000;
+    border-radius: $logo-size - 2;
+    border: 5px solid white;
+  }
+}
+
+header{
+  // margin-top: 18px;
+  @extend .container;
+  h1{
+    top: 60px;
+    z-index: 10;
+    $x: 60px;
+    position: fixed;
+    width: $site-width - 164px - $x;
+    // height: $header-height;
+    @include transparent-stripies;
+    @include markus(2.4em);
+    margin: 0 0 0 164px - $x;
+    padding: 12px $x;
+  }
 }

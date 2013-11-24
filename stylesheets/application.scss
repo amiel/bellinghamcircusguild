@@ -3,16 +3,27 @@
 
 $accent-color: #2dc4ff;
 $highlight-color: #fbee1b;
+$text-color: #fff;
+$background-color: #000;
 
 $site-width: 960px;
+
+
+$navbar-height: 42px;
+$logo-size: 138px;
+
+$header-height: $logo-size;
 
 $footer-nav-height: 38px;
 $sub-footer-height: 52px;
 $footer-height: $footer-nav-height + $sub-footer-height;
 
 #wpadminbar{ display: none; }
+// Overwrite wordpress-admin styles in <head>
+html[lang] { margin-top: 0 !important; }
 
 @import "modules/typeography";
+@import "modules/general";
 
 @import "layout/general";
 @import "layout/header";
