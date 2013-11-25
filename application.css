@@ -368,6 +368,7 @@ html, body {
 body {
   padding-bottom: 90px;
   background-color: black;
+  background: url(images/bg-home.png) 0px 42px no-repeat fixed;
   color: white; }
 
 .container, #main, #navbar div.menu, h1#logo, header, footer.page nav .menu, footer.page #sub-footer .container {
