@@ -8,5 +8,5 @@ guard 'remote-sync',
         :cli => "--color",
         :sync_on_start => true do
 
-  watch(%r{^.+\.(js|php|css)$})
+  watch(%r{^.+\.(js|php|css|png|gif|jpg)$})
 end

@@ -356,7 +356,7 @@ html[lang] {
 h2 {
   font-family: markus_inkregular;
   font-size: 1em;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.06em; }
 
 .sans {
   font-family: 'Open Sans', sans-serif; }
@@ -394,7 +394,7 @@ body {
       float: left;
       font-family: markus_inkregular;
       font-size: 1.5em;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.06em; }
       #navbar ul li a {
         color: #2dc4ff;
         text-decoration: none;
@@ -431,10 +431,10 @@ header h1 {
   z-index: 10;
   position: fixed;
   width: 736px;
-  background-color: rgba(125, 62, 14, 0.5);
+  background: url(images/pattern-transparent.png);
   font-family: markus_inkregular;
   font-size: 2.4em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   margin: 0 0 0 104px;
   padding: 12px 60px; }
 
@@ -446,10 +446,10 @@ footer.page {
   left: 0px; }
   footer.page nav {
     height: 38px;
-    background-color: rgba(125, 62, 14, 0.5);
+    background: url(images/pattern-transparent.png);
     font-family: markus_inkregular;
     font-size: 1.3em;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.06em; }
     footer.page nav ul {
       list-style-type: none;
       padding: 0;
@@ -483,7 +483,7 @@ footer.page {
     footer.page #sub-footer .directions {
       font-family: markus_inkregular;
       font-size: 1.3em;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.06em;
       padding: 0 16px; }
     footer.page #sub-footer .email, footer.page #sub-footer .copyright {
       border-left: 1px solid #000;
