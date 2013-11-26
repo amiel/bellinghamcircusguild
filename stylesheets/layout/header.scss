@@ -68,10 +68,10 @@ header{
     $x: 60px;
     position: fixed;
     width: $site-width - 164px - $x;
+    margin: 0 0 0 164px - $x;
+    padding: 12px $x;
     // height: $header-height;
     @include transparent-stripies;
     @include markus(2.4em);
-    margin: 0 0 0 164px - $x;
-    padding: 12px $x;
   }
 }

@@ -10,6 +10,7 @@ footer.page{
     // Temporary until we get our background image
     @include transparent-stripies;
     @include markus(1.3em);
+    background-color: rgba(169, 60, 15, 0.85);
     ul{
       list-style-type: none;
       padding: 0;
