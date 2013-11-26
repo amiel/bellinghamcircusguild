@@ -5,18 +5,23 @@ html, body{
 
 body{
   padding-bottom: $footer-height;
-  background-color: $background-color;
   background: url(images/bg-home.png) 0px 42px no-repeat fixed;
+  background-color: $background-color;
   color: $text-color;
   font-family: $georgia;
 }
 
 .container{
   margin: 0 auto;
-  width: $site-width;
+  // width: $site-width;
+  @include outer-container;
 }
 
 #main{
   padding-top: $header-height;
   @extend .container;
+  h2{ @extend .sans; }
 }
+
+// 4 | 235
+

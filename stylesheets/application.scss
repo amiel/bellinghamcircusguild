@@ -1,5 +1,9 @@
 @import "vendor/normalize";
 @import "bourbon";
+$visual_grid: true;
+$visual_grid_index: back;
+$max-width: 960px;
+@import "neat";
 
 $accent-color: #2dc4ff;
 $highlight-color: #fbee1b;
@@ -9,7 +13,7 @@ $background-color: #000;
 $site-width: 960px;
 
 $navbar-height: 42px;
-$logo-size: 138px;
+$logo-size: 160px;
 
 $header-height: $logo-size;
 

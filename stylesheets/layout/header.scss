@@ -16,7 +16,7 @@
     margin: 0;
     li{
       float: left;
-      @include markus(1.5em);
+      @include markus(1.4em);
 
       a{
         color: $accent-color;
@@ -24,10 +24,15 @@
         text-align: center;
         line-height: $navbar-height;
         height: $navbar-height;
-        width: 100%;
+        display: inline-block;
+        padding: 0 1px 0 3px;
       }
 
       a:hover{ color: $highlight-color; }
+      &.current_page_item a{
+        background: url(images/current.png) center bottom no-repeat;
+      }
+
     }
 
     li:after{
@@ -46,16 +51,14 @@ h1#logo{
     z-index: 20;
     display: block;
     position: fixed;
-    top: -16px;
+    top: -24px;
     @include hide-text;
 
     // Temporary
     width: $logo-size;
     height: $logo-size;
 
-    background-color: #000;
-    border-radius: $logo-size - 2;
-    border: 5px solid white;
+    background: url(images/logo.png);
   }
 }
 
@@ -65,13 +68,14 @@ header{
   h1{
     top: 60px;
     z-index: 10;
-    $x: 60px;
+    $x: 84px;
     position: fixed;
     width: $site-width - 164px - $x;
     margin: 0 0 0 164px - $x;
     padding: 12px $x;
     // height: $header-height;
     @include transparent-stripies;
+    border: none;
     @include markus(2.4em);
   }
 }
