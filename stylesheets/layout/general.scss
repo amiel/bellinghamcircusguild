@@ -23,17 +23,22 @@ body{
   overflow: hidden;
 }
 
+
+$main-section-width: 720px;
+$sidebar-width: 220px;
+
 #main{
   h2{ @extend .sans; }
 
   float: left;
-  padding-right: 200px;
-  width: 760px;
+  padding-right: 130px;
+  margin-left: 10px;
+  width: $main-section-width;
 }
 
 #sidebar{
   float: left;
-  width: 200px;
+  width: $sidebar-width;
 }
 
 

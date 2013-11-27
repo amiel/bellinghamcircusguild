@@ -48,12 +48,12 @@ footer.page{
     address{ display: inline; font-style: normal; }
     .directions{
       @include markus(1.3em);
-      padding: 0 16px;
+      // padding: 0 16px;
     }
 
     .email, .copyright{
       border-left: 1px solid #000;
-      padding: 0px 16px;
+      // padding: 0px 16px;
     }
   }
 }

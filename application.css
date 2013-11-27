@@ -382,12 +382,13 @@ body {
 
 #main {
   float: left;
-  padding-right: 200px;
-  width: 760px; }
+  padding-right: 130px;
+  margin-left: 10px;
+  width: 720px; }
 
 #sidebar {
   float: left;
-  width: 200px; }
+  width: 220px; }
 
 #navbar {
   position: fixed;
@@ -507,8 +508,6 @@ footer.page {
       font-family: markus_inkregular;
       font-size: 1.3em;
       letter-spacing: 0.06em;
-      -webkit-font-smoothing: antialiased;
-      padding: 0 16px; }
+      -webkit-font-smoothing: antialiased; }
     footer.page #sub-footer .email, footer.page #sub-footer .copyright {
-      border-left: 1px solid #000;
-      padding: 0px 16px; }
+      border-left: 1px solid #000; }
