@@ -2,3 +2,14 @@
   background: url(images/pattern-transparent.png);
   border: 1px solid #000;
 }
+
+@mixin reset-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  & > li{
+    margin: 0;
+    padding: 0;
+  }
+}

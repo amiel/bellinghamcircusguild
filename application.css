@@ -360,6 +360,41 @@ html[lang] {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
+ul.widgets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px; }
+  ul.widgets > li {
+    margin: 0;
+    padding: 0; }
+
+#sidebar .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+  #sidebar .menu > li {
+    margin: 0;
+    padding: 0; }
+  #sidebar .menu li {
+    margin-bottom: 5px; }
+  #sidebar .menu a {
+    font-family: markus_inkregular;
+    font-size: 2.5em;
+    letter-spacing: 0.06em;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+
+.widget_text {
+  color: #e5df7e;
+  font-style: italic;
+  font-size: .9em; }
+
 html, body {
   position: relative;
   height: 100%; }
@@ -481,10 +516,9 @@ footer.page {
       footer.page nav ul li {
         float: left;
         border-left: 1px solid rgba(0, 0, 0, 0.5);
-        width: 24%; }
+        width: 25%; }
         footer.page nav ul li a {
           display: block;
-          width: 100%;
           height: 38px;
           line-height: 38px;
           text-align: center;
@@ -493,7 +527,7 @@ footer.page {
         footer.page nav ul li a:hover {
           color: #fbee1b; }
       footer.page nav ul li:last-child {
-        border-right: 1px solid #000; }
+        border-right: 1px solid rgba(0, 0, 0, 0.5); }
   footer.page #sub-footer {
     text-align: center;
     color: #000;
@@ -501,13 +535,18 @@ footer.page {
     background-color: #fbee1b;
     height: 52px;
     line-height: 52px; }
+    footer.page #sub-footer address, footer.page #sub-footer span, footer.page #sub-footer div {
+      display: inline-block; }
     footer.page #sub-footer address {
-      display: inline;
       font-style: normal; }
     footer.page #sub-footer .directions {
       font-family: markus_inkregular;
       font-size: 1.3em;
       letter-spacing: 0.06em;
-      -webkit-font-smoothing: antialiased; }
+      -webkit-font-smoothing: antialiased;
+      padding: 0 16px; }
     footer.page #sub-footer .email, footer.page #sub-footer .copyright {
-      border-left: 1px solid #000; }
+      border-left: 1px solid #000;
+      padding: 0px 16px; }
+      footer.page #sub-footer .email:last-child, footer.page #sub-footer .copyright:last-child {
+        padding-right: 0; }
