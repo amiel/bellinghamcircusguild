@@ -65,14 +65,18 @@ h1#logo{
 header{
   // margin-top: 18px;
   @extend .container;
+  position: relative;
+
   h1{
+    $offset: 84px;
+
     top: 60px;
     z-index: 10;
-    $x: 84px;
     position: fixed;
-    width: $site-width - 164px - $x;
-    margin: 0 0 0 164px - $x;
-    padding: 12px $x;
+    padding: 12px $offset 12px ($logo-size - $offset + 10px);
+    margin-top: 0;
+    margin-left: $offset;
+    width: $site-width - $offset;
     // height: $header-height;
     @include transparent-stripies;
     border: none;

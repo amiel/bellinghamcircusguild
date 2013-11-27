@@ -5,10 +5,12 @@
     <h1><?php the_title(); ?></h1>
   </header>
 
-  <section id="main">
-    <?php the_content(); ?>
-  </section>
+  <div class="wrapper">
+    <section id="main">
+      <?php the_content(); ?>
+    </section>
+    <?php get_sidebar(); ?>
+  </div>
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -5,7 +5,8 @@ html, body{
 
 body{
   padding-bottom: $footer-height;
-  background: url(images/bg-home.png) 0px 42px no-repeat fixed;
+  background: url(images/bg-generic.jpg) 0px 42px no-repeat fixed;
+  background-size: 100% auto;
   background-color: $background-color;
   color: $text-color;
   font-family: $georgia;
@@ -13,15 +14,29 @@ body{
 
 .container{
   margin: 0 auto;
-  // width: $site-width;
-  @include outer-container;
+  width: $site-width;
+}
+
+.wrapper{
+  @extend .container;
+  padding-top: $header-height;
+  overflow: hidden;
 }
 
 #main{
-  padding-top: $header-height;
-  @extend .container;
   h2{ @extend .sans; }
+
+  float: left;
+  padding-right: 200px;
+  width: 760px;
 }
+
+#sidebar{
+  float: left;
+  width: 200px;
+}
+
+
 
 // 4 | 235
 

@@ -339,36 +339,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body:before {
-  content: '';
-  display: inline-block;
-  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 960px;
-  opacity: 0.4;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  pointer-events: none;
-  z-index: -1; }
-
 #wpadminbar {
   display: none; }
 
 html[lang] {
   margin-top: 0 !important; }
+
+* {
+  box-sizing: border-box; }
 
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on November 22, 2013 */
 @font-face {
@@ -388,25 +366,28 @@ html, body {
 
 body {
   padding-bottom: 90px;
-  background: url(images/bg-home.png) 0px 42px no-repeat fixed;
+  background: url(images/bg-generic.jpg) 0px 42px no-repeat fixed;
+  background-size: 100% auto;
   background-color: black;
   color: white;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
 
-.container, #main, #navbar div.menu, h1#logo, header, footer.page nav .menu, footer.page #sub-footer .container {
+.container, .wrapper, #navbar div.menu, h1#logo, header, footer.page nav .menu, footer.page #sub-footer .container {
   margin: 0 auto;
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-  .container:before, #main:before, #navbar div.menu:before, h1#logo:before, header:before, footer.page nav .menu:before, footer.page #sub-footer .container:before, .container:after, #main:after, #navbar div.menu:after, h1#logo:after, header:after, footer.page nav .menu:after, footer.page #sub-footer .container:after {
-    content: " ";
-    display: table; }
-  .container:after, #main:after, #navbar div.menu:after, h1#logo:after, header:after, footer.page nav .menu:after, footer.page #sub-footer .container:after {
-    clear: both; }
+  width: 960px; }
+
+.wrapper {
+  padding-top: 160px;
+  overflow: hidden; }
 
 #main {
-  padding-top: 160px; }
+  float: left;
+  padding-right: 200px;
+  width: 760px; }
+
+#sidebar {
+  float: left;
+  width: 200px; }
 
 #navbar {
   position: fixed;
@@ -425,7 +406,8 @@ body {
       float: left;
       font-family: markus_inkregular;
       font-size: 1.4em;
-      letter-spacing: 0.06em; }
+      letter-spacing: 0.06em;
+      -webkit-font-smoothing: antialiased; }
       #navbar ul li a {
         color: #2dc4ff;
         text-decoration: none;
@@ -458,19 +440,23 @@ h1#logo a {
   height: 160px;
   background: url(images/logo.png); }
 
-header h1 {
-  top: 60px;
-  z-index: 10;
-  position: fixed;
-  width: 712px;
-  margin: 0 0 0 80px;
-  padding: 12px 84px;
-  background: url(images/pattern-transparent.png);
-  border: 1px solid #000;
-  border: none;
-  font-family: markus_inkregular;
-  font-size: 2.4em;
-  letter-spacing: 0.06em; }
+header {
+  position: relative; }
+  header h1 {
+    top: 60px;
+    z-index: 10;
+    position: fixed;
+    padding: 12px 84px 12px 86px;
+    margin-top: 0;
+    margin-left: 84px;
+    width: 876px;
+    background: url(images/pattern-transparent.png);
+    border: 1px solid #000;
+    border: none;
+    font-family: markus_inkregular;
+    font-size: 2.4em;
+    letter-spacing: 0.06em;
+    -webkit-font-smoothing: antialiased; }
 
 footer.page {
   position: fixed;
@@ -485,6 +471,7 @@ footer.page {
     font-family: markus_inkregular;
     font-size: 1.3em;
     letter-spacing: 0.06em;
+    -webkit-font-smoothing: antialiased;
     background-color: rgba(169, 60, 15, 0.85); }
     footer.page nav ul {
       list-style-type: none;
@@ -520,6 +507,7 @@ footer.page {
       font-family: markus_inkregular;
       font-size: 1.3em;
       letter-spacing: 0.06em;
+      -webkit-font-smoothing: antialiased;
       padding: 0 16px; }
     footer.page #sub-footer .email, footer.page #sub-footer .copyright {
       border-left: 1px solid #000;
