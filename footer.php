@@ -13,9 +13,20 @@
             <span class="postal-code">98225</span>
           </span>
         </address>
-        <a href="" class="directions">Get Directions</a>
-        <a href="mailto:info@bellinghamcircusguild.com" class="email">info@bellinghamcircusguild.com</a>
-        <span class="copyright">&copy;Copyright 2013, Bellingham Circus Guild</span>
+
+        <div class="directions">
+          <a href="">Get Directions</a>
+        </div>
+
+        <div class="social">
+          <a href="https://twitter.com/bhamcircus" class="twitter">@bhamcircus</a>
+          <a href="https://www.facebook.com/pages/Bellingham-Circus-Guild/125153415065" class="facebook">Facebook</a>
+          <a href="mailto:info@bellinghamcircusguild.com" class="email">info@bellinghamcircusguild.com</a>
+        </div>
+
+        <div class="copyright">
+          <span>&copy;Copyright 2013, Bellingham Circus Guild</span>
+        </div>
       </div>
     </section>
   </footer>

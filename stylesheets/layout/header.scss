@@ -77,7 +77,6 @@ header{
     margin-top: 0;
     margin-left: $offset;
     width: $site-width - $offset;
-    // height: $header-height;
     @include transparent-stripies;
     border: none;
     @include markus(2.4em);

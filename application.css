@@ -387,7 +387,7 @@ ul.widgets {
     letter-spacing: 0.06em;
     -webkit-font-smoothing: antialiased;
     display: block;
-    color: #fff;
+    color: white;
     text-decoration: none;
     background: url(images/arrow-style.png) right center no-repeat; }
     #sidebar .menu a:hover {
@@ -508,7 +508,7 @@ footer.page {
     background: url(images/pattern-transparent.png);
     border: 1px solid #000;
     font-family: markus_inkregular;
-    font-size: 1.3em;
+    font-size: 1.4em;
     letter-spacing: 0.06em;
     -webkit-font-smoothing: antialiased;
     background-color: rgba(169, 60, 15, 0.85); }
@@ -538,9 +538,8 @@ footer.page {
     background-color: #fbee1b;
     height: 52px;
     line-height: 52px; }
-    footer.page #sub-footer address, footer.page #sub-footer span, footer.page #sub-footer div {
-      display: inline-block; }
-    footer.page #sub-footer address {
+    footer.page #sub-footer address, footer.page #sub-footer div {
+      display: inline-block;
       font-style: normal; }
     footer.page #sub-footer .directions {
       font-family: markus_inkregular;
@@ -548,8 +547,23 @@ footer.page {
       letter-spacing: 0.06em;
       -webkit-font-smoothing: antialiased;
       padding: 0 16px; }
-    footer.page #sub-footer .email, footer.page #sub-footer .copyright {
-      border-left: 1px solid #000;
-      padding: 0px 16px; }
-      footer.page #sub-footer .email:last-child, footer.page #sub-footer .copyright:last-child {
-        padding-right: 0; }
+    footer.page #sub-footer .twitter, footer.page #sub-footer .facebook, footer.page #sub-footer .email {
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none;
+      display: inline-block;
+      background: center center no-repeat; }
+    footer.page #sub-footer .twitter {
+      width: 25px;
+      height: 21px;
+      background-image: url(images/icon-twitter.png); }
+    footer.page #sub-footer .facebook {
+      width: 16px;
+      height: 25px;
+      background-image: url(images/icon-facebook.png); }
+    footer.page #sub-footer .email {
+      width: 26px;
+      height: 20px;
+      background-image: url(images/icon-email.png); }
+    footer.page #sub-footer .copyright span {
+      border-left: 1px solid #000; }

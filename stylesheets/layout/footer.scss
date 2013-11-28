@@ -9,7 +9,7 @@ footer.page{
     height: $footer-nav-height;
     // Temporary until we get our background image
     @include transparent-stripies;
-    @include markus(1.3em);
+    @include markus(1.4em);
     background-color: rgba(169, 60, 15, 0.85);
     ul{
       list-style-type: none;
@@ -44,23 +44,42 @@ footer.page{
     height: $sub-footer-height;
     line-height: $sub-footer-height;
 
-    address, span, div {
+    address, div {
       display: inline-block;
+      font-style: normal;
     }
 
-    address{ font-style: normal; }
     .directions{
       @include markus(1.3em);
       padding: 0 16px;
     }
 
-    .email, .copyright{
-      border-left: 1px solid #000;
-      padding: 0px 16px;
+    .twitter, .facebook, .email{
+      @include hide-text;
+      display: inline-block;
+      background: center center no-repeat;
+    }
 
-      &:last-child{
-        padding-right: 0;
-      }
+    .twitter{
+      width: 25px;
+      height: 21px;
+      background-image: url(images/icon-twitter.png);
+    }
+
+    .facebook{
+      width: 16px;
+      height: 25px;
+      background-image: url(images/icon-facebook.png);
+    }
+
+    .email{
+      width: 26px;
+      height: 20px;
+      background-image: url(images/icon-email.png);
+    }
+
+    .copyright span{
+      border-left: 1px solid #000;
     }
   }
 }

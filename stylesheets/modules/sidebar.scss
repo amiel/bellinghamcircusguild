@@ -16,7 +16,7 @@ ul.widgets{
   a{
     @include markus(2.4em);
     display: block;
-    color: #fff;
+    color: $text-color;
     text-decoration: none;
     background: url(images/arrow-style.png) right center no-repeat;
     &:hover{ color: $highlight-color; }
