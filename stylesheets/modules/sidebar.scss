@@ -14,10 +14,12 @@ ul.widgets{
   }
 
   a{
-    @include markus(2.5em);
+    @include markus(2.4em);
     display: block;
     color: #fff;
     text-decoration: none;
+    background: url(images/arrow-style.png) right center no-repeat;
+    &:hover{ color: $highlight-color; }
   }
 }
 

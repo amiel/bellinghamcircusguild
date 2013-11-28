@@ -383,12 +383,15 @@ ul.widgets {
     margin-bottom: 5px; }
   #sidebar .menu a {
     font-family: markus_inkregular;
-    font-size: 2.5em;
+    font-size: 2.4em;
     letter-spacing: 0.06em;
     -webkit-font-smoothing: antialiased;
     display: block;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    background: url(images/arrow-style.png) right center no-repeat; }
+    #sidebar .menu a:hover {
+      color: #fbee1b; }
 
 .widget_text {
   color: #e5df7e;
