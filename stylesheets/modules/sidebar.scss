@@ -19,12 +19,12 @@ ul.widgets{
     color: $text-color;
     text-decoration: none;
     background: url(images/arrow-style.png) right center no-repeat;
-    &:hover{ color: $highlight-color; }
+    &:hover{ color: $highlight-text-color; }
   }
 }
 
 .widget_text{
-  color: desaturate(lighten($highlight-color, 15%), 30%);
+  color: $highlight-text-color;
   font-style: italic;
   font-size: .9em;
 }

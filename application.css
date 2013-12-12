@@ -356,6 +356,9 @@ html[lang] {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  font-size: 16px; }
+
 .sans, #main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
@@ -391,10 +394,10 @@ ul.widgets {
     text-decoration: none;
     background: url(images/arrow-style.png) right center no-repeat; }
     #sidebar .menu a:hover {
-      color: #fbee1b; }
+      color: #fcee21; }
 
 .widget_text {
-  color: #e5df7e;
+  color: #fcee21;
   font-style: italic;
   font-size: .9em; }
 
@@ -456,7 +459,7 @@ body {
         display: inline-block;
         padding: 0 1px 0 3px; }
       #navbar ul li a:hover {
-        color: #fbee1b; }
+        color: #fcee21; }
       #navbar ul li.current_page_item a {
         background: url(images/current.png) center bottom no-repeat; }
     #navbar ul li:after {
@@ -528,42 +531,49 @@ footer.page {
           color: white;
           text-decoration: none; }
         footer.page nav ul li a:hover {
-          color: #fbee1b; }
+          color: #2dc4ff; }
       footer.page nav ul li:last-child {
         border-right: 1px solid rgba(0, 0, 0, 0.5); }
   footer.page #sub-footer {
     text-align: center;
     color: #000;
-    font-size: 0.8em;
+    font-size: 0.75em;
     background-color: #fbee1b;
-    height: 52px;
-    line-height: 52px; }
+    height: 52px; }
     footer.page #sub-footer address, footer.page #sub-footer div {
       display: inline-block;
       font-style: normal; }
+    footer.page #sub-footer address {
+      line-height: 52px;
+      padding-right: 30px; }
     footer.page #sub-footer .directions {
-      font-family: markus_inkregular;
-      font-size: 1.3em;
-      letter-spacing: 0.06em;
-      -webkit-font-smoothing: antialiased;
-      padding: 0 16px; }
+      padding-right: 30px; }
+      footer.page #sub-footer .directions a {
+        color: transparent;
+        font: 0/0 a;
+        text-shadow: none;
+        display: inline-block;
+        height: 44px;
+        line-height: 52px;
+        background: center center no-repeat;
+        width: 166px;
+        background-image: url(images/get-directions.png); }
     footer.page #sub-footer .twitter, footer.page #sub-footer .facebook, footer.page #sub-footer .email {
       color: transparent;
       font: 0/0 a;
       text-shadow: none;
       display: inline-block;
+      height: 44px;
+      line-height: 52px;
       background: center center no-repeat; }
     footer.page #sub-footer .twitter {
       width: 25px;
-      height: 21px;
       background-image: url(images/icon-twitter.png); }
     footer.page #sub-footer .facebook {
       width: 16px;
-      height: 25px;
       background-image: url(images/icon-facebook.png); }
     footer.page #sub-footer .email {
       width: 26px;
-      height: 20px;
       background-image: url(images/icon-email.png); }
     footer.page #sub-footer .copyright span {
-      border-left: 1px solid #000; }
+      padding-left: 30px; }

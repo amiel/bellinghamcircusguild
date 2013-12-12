@@ -28,7 +28,7 @@
         padding: 0 1px 0 3px;
       }
 
-      a:hover{ color: $highlight-color; }
+      a:hover{ color: $highlight-text-color; }
       &.current_page_item a{
         background: url(images/current.png) center bottom no-repeat;
       }

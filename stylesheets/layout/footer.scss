@@ -30,7 +30,7 @@ footer.page{
           text-decoration: none;
         }
 
-        a:hover{ color: $highlight-color; }
+        a:hover{ color: $accent-color; }
       }
       li:last-child{ border-right: 1px solid rgba(0,0,0, 0.5); }
     }
@@ -39,47 +39,63 @@ footer.page{
   #sub-footer{
     text-align: center;
     color: #000;
-    font-size: 0.8em;
+    font-size: 0.75em;
     background-color: $highlight-color;
     height: $sub-footer-height;
-    line-height: $sub-footer-height;
 
     address, div {
       display: inline-block;
       font-style: normal;
     }
 
-    .directions{
-      @include markus(1.3em);
-      padding: 0 16px;
+    address{
+      line-height: $sub-footer-height;
+      padding-right: 30px;
+    }
+
+    @mixin footer-image-replacement {
+      @include hide-text;
+      display: inline-block;
+      height: $sub-footer-height - 8px; // I have no idea...
+      line-height: $sub-footer-height;
+      background: center center no-repeat;
+    }
+
+    .directions {
+      padding-right: 30px;
+      a{
+        @include footer-image-replacement;
+        width: 166px;
+        // height: 35px;
+        background-image: url(images/get-directions.png);
+      }
     }
 
     .twitter, .facebook, .email{
-      @include hide-text;
-      display: inline-block;
-      background: center center no-repeat;
+      @include footer-image-replacement;
     }
 
     .twitter{
       width: 25px;
-      height: 21px;
+      // height: 21px;
       background-image: url(images/icon-twitter.png);
     }
 
     .facebook{
       width: 16px;
-      height: 25px;
+      // height: 25px;
       background-image: url(images/icon-facebook.png);
     }
 
     .email{
       width: 26px;
-      height: 20px;
+      // height: 20px;
       background-image: url(images/icon-email.png);
     }
 
     .copyright span{
-      border-left: 1px solid #000;
+      padding-left: 30px;
+      // border-left: 1px solid #000;
     }
   }
 }
