@@ -1,5 +1,4 @@
 <?php
-// functions.php isn't a template, but defines your theme's configuration and allows you to add custom functions you can use other places
 
 require_once('vernacular/bootstrap.php');
 
@@ -24,15 +23,14 @@ if ( function_exists( 'register_sidebar' ) ) {
   ) );
 }
 
-// Let WordPress know we can use the menu system and Featured Images
-if ( function_exists( 'add_theme_support' ) ) {
-  add_theme_support( 'nav-menus' );
-  add_theme_support( 'post-thumbnails' );
+if ( function_exists('add_theme_support') ) {
+  add_theme_support('nav-menus');
+  add_theme_support('post-thumbnails');
 }
 
 // Register menus
-add_action( 'init', 'apprentice_register_menus' );
-function apprentice_register_menus() {
+add_action('init', 'register_menus');
+function register_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Header Menu' ),
