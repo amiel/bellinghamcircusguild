@@ -4,10 +4,12 @@ require_once('vernacular/bootstrap.php');
 
 function register_custom_post_types() {
   $event = new VernacularPostType('event');
+  $event->slug = 'events';
   $event->register();
 
   $class = new VernacularPostType('workshop');
-  // $class->labels('Class', 'Classes');
+  $class->slug = 'classes';
+  $class->labels('Class', 'Classes');
   $class->register();
 }
 add_action('init', 'register_custom_post_types');
