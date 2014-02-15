@@ -4,6 +4,8 @@ class VernacularRegistrar{
 
   public function __construct($klass){
     $this->klass = $klass;
+    $this->slug = $klass;
+
   }
 
   public function joins(){
@@ -73,14 +75,17 @@ class VernacularPostType extends VernacularRegistrar{
     register_post_type(
       $this->klass,
       array(
+        'public' => $this->public,
+        'has_archive' => $this->has_archive,
+        'taxonomies' => $this->joins(),
         'labels' => array(
           'name' => $this->name(),
           'singular_name' => $this->singular_name(),
           'add_new_item' => 'Add '.$this->singular_name()
         ),
-      'public' => $this->public,
-      'has_archive' => $this->has_archive,
-      'taxonomies' => $this->joins()
+        'rewrite' => array(
+          'slug' => $this->slug,
+        )
       )
     );
   }
