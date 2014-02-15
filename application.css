@@ -359,7 +359,7 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, #main h2 {
+.sans, .home.page #main #coming-soon a, .home.page #main #sponsors .links, #main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -401,6 +401,92 @@ ul.widgets {
   font-style: italic;
   font-size: .9em; }
 
+.home.page #main {
+  width: 630px;
+  margin: 0 auto;
+  padding: 0;
+  float: none; }
+  .home.page #main #mission {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    background-image: url(images/home-banner.png);
+    width: 623px;
+    height: 422px; }
+  .home.page #main #coming-soon {
+    text-align: center;
+    margin-top: 2em;
+    background: url(images/pattern-transparent.png);
+    border: 1px solid #000;
+    padding: 23px; }
+    .home.page #main #coming-soon h3 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      color: #fcee21; }
+    .home.page #main #coming-soon h4 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      letter-spacing: 0.08em;
+      font-style: italic;
+      font-weight: lighter;
+      background-image: url(images/swoosh-left.png), url(images/swoosh-right.png);
+      background-position: center left, center right;
+      background-repeat: no-repeat;
+      display: inline-block;
+      padding: 0 41px;
+      margin: 0.35em 0; }
+    .home.page #main #coming-soon hr {
+      width: 60%;
+      margin: 0.65em auto 1em; }
+    .home.page #main #coming-soon a {
+      margin-top: 1em;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #2dc4ff; }
+      .home.page #main #coming-soon a time {
+        color: #fcee21; }
+      .home.page #main #coming-soon a img {
+        margin-left: 0.6em; }
+  .home.page #main #sponsors {
+    margin-top: 2em;
+    color: #fcee21;
+    font-style: italic; }
+    .home.page #main #sponsors .links {
+      color: white;
+      font-size: 0.9em;
+      font-style: normal;
+      text-transform: uppercase; }
+      .home.page #main #sponsors .links a {
+        color: white; }
+.home.page footer nav {
+  height: 142px;
+  border: none;
+  background: rgba(0, 0, 0, 0.85); }
+  .home.page footer nav ul li {
+    border: none; }
+    .home.page footer nav ul li a {
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none;
+      height: 142px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      opacity: 0.9; }
+    .home.page footer nav ul li a:hover {
+      opacity: 1; }
+    .home.page footer nav ul li a[href*=events] {
+      background-image: url(images/icon-events.png); }
+    .home.page footer nav ul li a[href*=hire-a-performer] {
+      background-image: url(images/icon-hire.png);
+      background-position-y: 11px; }
+    .home.page footer nav ul li a[href*=classes] {
+      background-image: url(images/icon-classes.png);
+      background-position-y: 11px; }
+    .home.page footer nav ul li a[href*=location] {
+      background-image: url(images/icon-space.png);
+      background-position-y: 36px; }
+
 html, body {
   position: relative;
   height: 100%; }
@@ -430,6 +516,11 @@ body {
 #sidebar {
   float: left;
   width: 220px; }
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #fff; }
 
 #navbar {
   position: fixed;
