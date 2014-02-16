@@ -487,6 +487,12 @@ ul.widgets {
       background-image: url(images/icon-space.png);
       background-position-y: 36px; }
 
+body.post-type-archive-event section.event {
+  float: left;
+  width: 300px;
+  border: 1px solid #fff;
+  overflow: hidden; }
+
 html, body {
   position: relative;
   height: 100%; }
