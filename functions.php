@@ -14,6 +14,20 @@ function register_custom_post_types() {
 }
 add_action('init', 'register_custom_post_types');
 
+function display_date($date_string) {
+  $date = strtotime($date_string);
+  echo date("M j", $date);
+}
+
+function the_event_date() {
+  display_date(get_field('start_on'));
+  $end = get_field('end_on');
+  if (!empty($end)) {
+    echo "<br/> - <br/>";
+    display_date($end);
+  }
+}
+
 
 // Register a sidebar
 if ( function_exists( 'register_sidebar' ) ) {
