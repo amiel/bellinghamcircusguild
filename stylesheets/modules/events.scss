@@ -1,8 +1,71 @@
 body.post-type-archive-event{
+  background-image: url(images/bg-events.jpg);
+
+  $events-column-width: 240px;
+  $events-gutter-width: 8px;
+
+  #main{
+    width: $events-column-width * 4 + $events-gutter-width * 5;
+    margin-left: -$events-gutter-width;
+    padding: 0;
+  }
+
+  #vaudevillingham{
+    background: #000;
+    width: $events-column-width * 2 + $events-gutter-width;
+
+    h2{
+      @include hide-text;
+      background-image: url(images/vaudevillingham.png);
+      width: 161px;
+      height: 203px;
+    }
+
+    .times{
+      @include markus(1.4em);
+    }
+  }
+
   section.event{
-    float: left;
-    width: 300px;
-    border: 1px solid #fff;
     overflow: hidden;
+    position: relative;
+    @include transparent-stripies;
+
+    float: left;
+    width: $events-column-width;
+    height: 280px;
+    border: 1px solid #000;
+    margin: $events-gutter-width / 2;
+
+    time{
+      position: absolute; left: 50%; top: 50%;
+      width: 100px; height: 100px;
+      margin: -50px 0 0 -50px;
+      border-radius: 50px;
+      text-align: center;
+      @include markus(1.4em);
+      background: rgba(45, 196, 255, 0.7);
+
+      .month, .day, .separator{ display: block; }
+      .day{ font-size: 2em; }
+      .separator{ margin: -0.3em 0; }
+
+      &.range{
+        .month, .day{ display: inline-block; font-size: 1.2em; }
+      }
+
+    }
+
+    .info{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #000;
+      @extend .sans;
+      color: $accent-color;
+      font-size: 0.9em;
+      h3{ color: $highlight-text-color; margin: 0; font-size: 1em; }
+    }
+
   }
 }

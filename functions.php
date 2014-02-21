@@ -16,16 +16,22 @@ add_action('init', 'register_custom_post_types');
 
 function display_date($date_string) {
   $date = strtotime($date_string);
-  echo date("M j", $date);
+  $month = '<span class="month">' . date("M", $date) . '</span> ';
+  $day = '<span class="day">' . date("j", $date) . '</span>';
+  echo $month . $day;
 }
 
 function the_event_date() {
-  display_date(get_field('start_on'));
   $end = get_field('end_on');
-  if (!empty($end)) {
-    echo "<br/> - <br/>";
+  $is_range = !empty($end);
+  $class = ($is_range) ? 'range' : '';
+  echo "<time class='$class'>";
+  display_date(get_field('start_on'));
+  if ($is_range) {
+    echo ' <span class="separator">-</span> ';
     display_date($end);
   }
+  echo "</time>";
 }
 
 

@@ -359,7 +359,7 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .home.page #main #coming-soon a, .home.page #main #sponsors .links, #main h2 {
+.sans, .home.page #main #coming-soon a, .home.page #main #sponsors .links, body.post-type-archive-event section.event .info, #main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -401,6 +401,8 @@ ul.widgets {
   font-style: italic;
   font-size: .9em; }
 
+.home.page .wrapper {
+  padding-bottom: 204px; }
 .home.page #main {
   width: 630px;
   margin: 0 auto;
@@ -487,18 +489,77 @@ ul.widgets {
       background-image: url(images/icon-space.png);
       background-position-y: 36px; }
 
-body.post-type-archive-event section.event {
-  float: left;
-  width: 300px;
-  border: 1px solid #fff;
-  overflow: hidden; }
+body.post-type-archive-event {
+  background-image: url(images/bg-events.jpg); }
+  body.post-type-archive-event #main {
+    width: 1000px;
+    margin-left: -8px;
+    padding: 0; }
+  body.post-type-archive-event #vaudevillingham {
+    background: #000;
+    width: 488px; }
+    body.post-type-archive-event #vaudevillingham h2 {
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none;
+      background-image: url(images/vaudevillingham.png);
+      width: 161px;
+      height: 203px; }
+    body.post-type-archive-event #vaudevillingham .times {
+      font-family: markus_inkregular;
+      font-size: 1.4em;
+      letter-spacing: 0.06em;
+      -webkit-font-smoothing: antialiased; }
+  body.post-type-archive-event section.event {
+    overflow: hidden;
+    position: relative;
+    background: url(images/pattern-transparent.png);
+    border: 1px solid #000;
+    float: left;
+    width: 240px;
+    height: 280px;
+    border: 1px solid #000;
+    margin: 4px; }
+    body.post-type-archive-event section.event time {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      margin: -50px 0 0 -50px;
+      border-radius: 50px;
+      text-align: center;
+      font-family: markus_inkregular;
+      font-size: 1.4em;
+      letter-spacing: 0.06em;
+      -webkit-font-smoothing: antialiased;
+      background: rgba(45, 196, 255, 0.7); }
+      body.post-type-archive-event section.event time .month, body.post-type-archive-event section.event time .day, body.post-type-archive-event section.event time .separator {
+        display: block; }
+      body.post-type-archive-event section.event time .day {
+        font-size: 2em; }
+      body.post-type-archive-event section.event time .separator {
+        margin: -0.3em 0; }
+      body.post-type-archive-event section.event time.range .month, body.post-type-archive-event section.event time.range .day {
+        display: inline-block;
+        font-size: 1.2em; }
+    body.post-type-archive-event section.event .info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #000;
+      color: #2dc4ff;
+      font-size: 0.9em; }
+      body.post-type-archive-event section.event .info h3 {
+        color: #fcee21;
+        margin: 0;
+        font-size: 1em; }
 
 html, body {
   position: relative;
   height: 100%; }
 
 body {
-  padding-bottom: 90px;
   background: url(images/bg-generic.jpg) 0px 42px no-repeat fixed;
   background-size: 100% auto;
   background-color: black;
@@ -511,6 +572,7 @@ body {
 
 .wrapper {
   padding-top: 160px;
+  padding-bottom: 100px;
   overflow: hidden; }
 
 #main {

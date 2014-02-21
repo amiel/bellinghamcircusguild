@@ -4,7 +4,6 @@ html, body{
 }
 
 body{
-  padding-bottom: $footer-height;
   background: url(images/bg-generic.jpg) 0px 42px no-repeat fixed;
   background-size: 100% auto;
   background-color: $background-color;
@@ -20,6 +19,7 @@ body{
 .wrapper{
   @extend .container;
   padding-top: $header-height;
+  padding-bottom: $footer-height + 10px;
   overflow: hidden;
 }
 

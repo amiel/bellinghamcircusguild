@@ -1,4 +1,8 @@
+$home-footer-nav-height: 142px;
+
+
 .home.page{
+  .wrapper{ padding-bottom: $home-footer-nav-height + $sub-footer-height + 10px; }
 
   #main{
     width: 630px;
@@ -70,7 +74,6 @@
   }
 
   footer nav{
-    $home-footer-nav-height: 142px;
     height: $home-footer-nav-height;
     border: none;
     background: rgba(0,0,0, 0.85);
