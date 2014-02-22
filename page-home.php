@@ -13,12 +13,12 @@
 
       <hr />
 
-      <a href="#">
-        <!-- stub content -->
-        <!-- TODO: Use ACF -->
+      <?php $post = events_query()->random_post(); ?>
+      <?php _loop::load($post); ?>
 
-        <time>August 24</time>
-        / <span class="description">Super Hero Boy Band with special guests Funky Monkey and the New Loompahs</span>
+      <a href="<?php the_permalink(); ?>">
+        <time><?php the_event_date(); ?></time>
+        / <span class="description"><?php the_title(); ?></span>
         <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
       </a>
     </section>
