@@ -45,7 +45,18 @@
         </section>
       <?php endforeach; ?>
     <?php else : ?>
-      NO EVENTS
+      <section id="no-events" class="alert">
+        <h3>Uh Oh!</h3>
+        <h4>There are no other upcoming events to display.</h4>
+
+        <hr />
+
+        <a href="#donate">
+          <span class="description">You should donate so we can make even more fun events for you to attend!</span>
+          <span class="highlight">DONATE</span>
+          <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
+        </a>
+      </section>
     <?php endif; ?>
   </section>
 </div>

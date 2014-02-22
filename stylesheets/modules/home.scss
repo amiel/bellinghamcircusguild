@@ -18,43 +18,7 @@ $home-footer-nav-height: 142px;
     }
 
     #coming-soon{
-      text-align: center;
-      margin-top: 2em;
-      @include transparent-stripies;
-      padding: 23px;
-
-      h3{
-        margin: 0;
-        font-size: 2em;
-        text-transform: uppercase;
-        color: $highlight-text-color;
-      }
-
-      h4{
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        letter-spacing: 0.08em;
-        font-style: italic;
-        font-weight: lighter;
-        background-image: url(images/swoosh-left.png), url(images/swoosh-right.png);
-        background-position: center left, center right;
-        background-repeat: no-repeat;
-        display: inline-block;
-        padding: 0 41px;
-        margin: 0.35em 0;
-      }
-
-      hr{ width: 60%; margin: 0.65em auto 1em; }
-
-      a{
-        @extend .sans;
-        margin-top: 1em;
-        font-size: 1.3em;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: $accent-color;
-        time{ color: $highlight-text-color; }
-        img{ margin-left: 0.6em; }
-      }
+      @extend .alert;
     }
 
     #sponsors{

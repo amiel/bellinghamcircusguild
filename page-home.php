@@ -9,14 +9,14 @@
 
     <?php $event = events_query()->random_post(); ?>
     <?php if ($event) : _loop::load($post = $event); ?>
-      <section id="coming-soon">
+      <section id="coming-soon" class="alert">
         <h3>Coming Soon</h3>
         <h4>to the Cirque Lab</h4>
 
         <hr />
 
         <a href="<?php the_permalink(); ?>">
-          <time><?php the_event_date(); ?></time>
+          <time class="highlight"><?php the_event_date(); ?></time>
           / <span class="description"><?php the_title(); ?></span>
           <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
         </a>

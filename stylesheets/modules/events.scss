@@ -18,6 +18,12 @@ body.events{
     background-repeat: no-repeat;
     padding: 44px 264px 0 284px;
     margin: 0;
+    float: none;
+  }
+
+  #no-events{
+    @extend .alert;
+    padding: 23px 168px;
   }
 
   #vaudevillingham{
