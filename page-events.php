@@ -1,16 +1,15 @@
 <?php get_header(); ?>
 
+<?php $events = events(); ?>
+
 <header>
   <h1>Events</h1>
 </header>
 
 <div class="wrapper">
-  <section id="main" <?php if (!have_posts()) echo 'class="no-events"'; ?>>
+  <section id="main" <?php if (count($events) == 0) echo 'class="no-events"'; ?>>
 
     <section class="event" id="vaudevillingham">
-      <div class="placeholder-1"></div>
-      <div class="placeholder-2"></div>
-
       <h2>Vaudevillingham</h2>
 
       <div class="times">
@@ -25,13 +24,13 @@
       </div>
     </section>
 
-    <?php if (have_posts()) : ?>
-      <?php while (have_posts()) : the_post(); ?>
+    <?php if (count($events) > 0) : ?>
+      <?php foreach ($events as $post) : _loop::load($post); ?>
         <section class="event" id="event_<?php the_ID(); ?>">
           <?php the_event_date(); ?>
 
           <?php $image = new VernacularImage(get_field('image')); ?>
-          <img src="<?php echo $image->crop(240, 320); ?>" />
+          <img src="<?php echo $image->crop(240, 282); ?>" />
 
           <div class="info">
             <h3>
@@ -44,7 +43,7 @@
             </div>
           </div>
         </section>
-      <?php endwhile; ?>
+      <?php endforeach; ?>
     <?php else : ?>
       NO EVENTS
     <?php endif; ?>

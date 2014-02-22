@@ -1,6 +1,7 @@
 <?php
 
 require_once('vernacular/bootstrap.php');
+require_once('modules/events.php');
 
 function register_custom_post_types() {
   $event = new VernacularPostType('event');
@@ -13,26 +14,6 @@ function register_custom_post_types() {
   $class->register();
 }
 add_action('init', 'register_custom_post_types');
-
-function display_date($date_string) {
-  $date = strtotime($date_string);
-  $month = '<span class="month">' . date("M", $date) . '</span> ';
-  $day = '<span class="day">' . date("j", $date) . '</span>';
-  echo $month . $day;
-}
-
-function the_event_date() {
-  $end = get_field('end_on');
-  $is_range = !empty($end);
-  $class = ($is_range) ? 'range' : '';
-  echo "<time class='$class'>";
-  display_date(get_field('start_on'));
-  if ($is_range) {
-    echo ' <span class="separator">-</span> ';
-    display_date($end);
-  }
-  echo "</time>";
-}
 
 function get_slug() {
   $slug = basename(get_permalink());

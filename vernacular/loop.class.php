@@ -8,19 +8,26 @@ class VernacularQuery{
       $this->options['post_type'] = $this->default_post_type;
   }
 
-  // public function random_posts($count = 3){
-  //   $options = array('posts_per_page' => $count, 'orderby' => 'rand');
-  //   return $this->query($options);
-  // }
+  private function query(){
+    return new WP_Query($this->options);
+  }
 
-  // public function recent_posts($count = 3){
-  //   $this->add_option('posts_per_page', $count);
-  //   return $this->query();
-  // }
+  public function posts() {
+    return $this->query()->get_posts();
+  }
 
-  public function query(){
-    $query = new WP_Query($this->options);
-    return $query->get_posts();
+  public function random_posts($count = 3){
+    $query = $this->add_option('posts_per_page', $count)->add_option('orderby', 'rand');
+    return $query->posts();
+  }
+
+  public function random_post() {
+    $array = $this->random_posts(1);
+    return $array[0];
+  }
+
+  public function has_posts() {
+    return $this->query()->post_count > 0;
   }
 
   // Options
@@ -46,6 +53,10 @@ class VernacularQuery{
 
   public function order($by, $direction) {
     return $this->add_option('orderby', $by)->add_option('order', $direction);
+  }
+
+  public function meta_query($query) {
+    return $this->add_option('meta_query', $query);
   }
 
   public function custom_type_query($key, $compare, $value) {
