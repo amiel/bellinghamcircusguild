@@ -15,7 +15,7 @@
         </address>
 
         <div class="directions">
-          <a href="">Get Directions</a>
+          <a href="/location">Get Directions</a>
         </div>
 
         <div class="social">

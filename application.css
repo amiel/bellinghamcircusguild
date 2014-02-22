@@ -654,11 +654,11 @@ hr {
   #navbar ul {
     display: inline-block;
     float: right;
-    overflow: hidden;
     list-style-type: none;
     padding: 0;
     margin: 0; }
     #navbar ul li {
+      position: relative;
       float: left;
       font-family: markus_inkregular;
       font-size: 1.4em;
@@ -674,12 +674,26 @@ hr {
         padding: 0 1px 0 3px; }
       #navbar ul li a:hover {
         color: #fcee21; }
-      #navbar ul li.current_page_item a {
+      #navbar ul li.current_page_item > a {
         background: url(images/current.png) center bottom no-repeat; }
+      #navbar ul li:hover ul {
+        display: block; }
+      #navbar ul li ul {
+        background: rgba(0, 0, 0, 0.6);
+        left: 0;
+        top: 42px;
+        position: absolute;
+        display: none; }
+        #navbar ul li ul li {
+          font-size: 1em;
+          padding: 0px 6px; }
+        #navbar ul li ul li:after {
+          content: "";
+          padding: 0; }
     #navbar ul li:after {
       content: "/";
       color: #2dc4ff;
-      padding: 0 16px; }
+      padding: 0 14px; }
     #navbar ul li:last-child:after {
       content: "";
       padding: 0; }

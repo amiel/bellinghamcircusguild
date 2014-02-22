@@ -11,11 +11,11 @@
   ul{
     display: inline-block;
     float: right;
-    overflow: hidden;
     list-style-type: none;
     padding: 0;
     margin: 0;
     li{
+      position: relative;
       float: left;
       @include markus(1.4em);
 
@@ -30,8 +30,20 @@
       }
 
       a:hover{ color: $highlight-text-color; }
-      &.current_page_item a{
+      &.current_page_item > a{
         background: url(images/current.png) center bottom no-repeat;
+      }
+
+      &:hover ul{ display: block; }
+
+      ul{
+        background: rgba(0, 0, 0, 0.6);
+        left: 0; top: $navbar-height;
+        position: absolute;
+        display: none;
+
+        li{ font-size: 1em; padding: 0px 6px; }
+        li:after{ content: ""; padding: 0; }
       }
 
     }
@@ -39,7 +51,7 @@
     li:after{
       content: "/";
       color: $accent-color;
-      padding: 0 16px;
+      padding: 0 14px;
     }
 
     li:last-child:after{ content: ""; padding: 0; }
