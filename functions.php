@@ -34,6 +34,14 @@ function the_event_date() {
   echo "</time>";
 }
 
+function get_slug() {
+  $slug = basename(get_permalink());
+  do_action('before_slug', $slug);
+  $slug = apply_filters('slug_filter', $slug);
+  do_action('after_slug', $slug);
+  return $slug;
+}
+
 
 // Register a sidebar
 if ( function_exists( 'register_sidebar' ) ) {

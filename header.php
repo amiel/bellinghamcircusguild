@@ -14,7 +14,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(get_slug()); ?>>
   <div id="navbar">
     <?php wp_nav_menu(array('container_class' => 'menu', 'theme_location' => 'header-menu')); ?>
   </div>
