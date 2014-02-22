@@ -497,19 +497,53 @@ body.post-type-archive-event {
     padding: 0; }
   body.post-type-archive-event #vaudevillingham {
     background: #000;
-    width: 488px; }
+    width: 488px;
+    font-family: markus_inkregular;
+    font-size: 1.4em;
+    letter-spacing: 0.06em;
+    -webkit-font-smoothing: antialiased;
+    padding: 56px 48px; }
     body.post-type-archive-event #vaudevillingham h2 {
       color: transparent;
       font: 0/0 a;
       text-shadow: none;
+      background-repeat: no-repeat;
       background-image: url(images/vaudevillingham.png);
       width: 161px;
-      height: 203px; }
+      height: 203px;
+      box-sizing: content-box;
+      padding-right: 12px;
+      border-right: 1px solid #fff;
+      float: left; }
+    body.post-type-archive-event #vaudevillingham .times, body.post-type-archive-event #vaudevillingham .date {
+      margin-left: 173px; }
     body.post-type-archive-event #vaudevillingham .times {
-      font-family: markus_inkregular;
-      font-size: 1.4em;
-      letter-spacing: 0.06em;
-      -webkit-font-smoothing: antialiased; }
+      display: block;
+      padding: 12px 0 12px 24px;
+      font-size: 2em;
+      border-bottom: 1px solid #fff; }
+      body.post-type-archive-event #vaudevillingham .times .ampersand {
+        display: inline-block;
+        color: transparent;
+        background: url(images/ampersand.png) no-repeat center center;
+        width: 22px;
+        height: 1em;
+        margin: 0 0.1em; }
+    body.post-type-archive-event #vaudevillingham .date {
+      padding: 16px;
+      background: url(images/style-arrow-fill.png) no-repeat right center;
+      font-size: 1.4em; }
+      body.post-type-archive-event #vaudevillingham .date .small {
+        font-size: 1em/1.6em; }
+      body.post-type-archive-event #vaudevillingham .date .large {
+        font-size: 1.6em; }
+      body.post-type-archive-event #vaudevillingham .date .accent:after {
+        content: " ";
+        display: block; }
+    body.post-type-archive-event #vaudevillingham .highlight {
+      color: #fcee21; }
+    body.post-type-archive-event #vaudevillingham .accent {
+      color: #2dc4ff; }
   body.post-type-archive-event section.event {
     overflow: hidden;
     position: relative;
@@ -517,20 +551,21 @@ body.post-type-archive-event {
     border: 1px solid #000;
     float: left;
     width: 240px;
-    height: 280px;
+    height: 320px;
     border: 1px solid #000;
     margin: 4px; }
     body.post-type-archive-event section.event time {
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 100px;
-      height: 100px;
-      margin: -50px 0 0 -50px;
-      border-radius: 50px;
+      width: 5em;
+      height: 5em;
+      margin: -2.5em 0 0 -2.5em;
+      border-radius: 2.5em;
+      padding-top: 1em;
       text-align: center;
       font-family: markus_inkregular;
-      font-size: 1.4em;
+      font-size: 1.5em;
       letter-spacing: 0.06em;
       -webkit-font-smoothing: antialiased;
       background: rgba(45, 196, 255, 0.7); }
@@ -547,13 +582,17 @@ body.post-type-archive-event {
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: #000;
+      background: rgba(0, 0, 0, 0.8);
       color: #2dc4ff;
       font-size: 0.9em; }
       body.post-type-archive-event section.event .info h3 {
         color: #fcee21;
         margin: 0;
         font-size: 1em; }
+    body.post-type-archive-event section.event .times {
+      display: none; }
+    body.post-type-archive-event section.event:hover .times {
+      display: block; }
 
 html, body {
   position: relative;

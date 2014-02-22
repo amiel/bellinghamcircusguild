@@ -13,17 +13,51 @@ body.post-type-archive-event{
   #vaudevillingham{
     background: #000;
     width: $events-column-width * 2 + $events-gutter-width;
+    @include markus(1.4em);
+    padding: 56px 48px;
 
     h2{
       @include hide-text;
+      background-repeat: no-repeat;
       background-image: url(images/vaudevillingham.png);
       width: 161px;
       height: 203px;
+      box-sizing: content-box;
+      padding-right: 12px;
+      border-right: 1px solid #fff;
+
+      float: left;
     }
 
+    .times, .date{ margin-left: 161px + 12px; }
+
     .times{
-      @include markus(1.4em);
+      display: block;
+      padding: 12px 0 12px 24px;
+      font-size: 2em;
+      border-bottom: 1px solid #fff;
+
+      .ampersand{
+        display: inline-block;
+        color: transparent;
+        background: url(images/ampersand.png) no-repeat center center;
+        width: 22px;
+        height: 1em;
+        margin: 0 0.1em;
+      }
     }
+
+    .date{
+      padding: 16px;
+      background: url(images/style-arrow-fill.png) no-repeat right center;
+      font-size: 1.4em;
+      .small{ font-size: 1em/1.6em; }
+      .large{ font-size: 1.6em; }
+      .accent:after { content: " "; display: block; }
+    }
+
+    .highlight{ color: $highlight-text-color; }
+    .accent{ color: $accent-color; }
   }
 
   section.event{
@@ -33,17 +67,18 @@ body.post-type-archive-event{
 
     float: left;
     width: $events-column-width;
-    height: 280px;
+    height: 320px;
     border: 1px solid #000;
     margin: $events-gutter-width / 2;
 
     time{
       position: absolute; left: 50%; top: 50%;
-      width: 100px; height: 100px;
-      margin: -50px 0 0 -50px;
-      border-radius: 50px;
+      width: 5em; height: 5em;
+      margin: -2.5em 0 0 -2.5em;
+      border-radius: 2.5em;
+      padding-top: 1em;
       text-align: center;
-      @include markus(1.4em);
+      @include markus(1.5em);
       background: rgba(45, 196, 255, 0.7);
 
       .month, .day, .separator{ display: block; }
@@ -53,19 +88,20 @@ body.post-type-archive-event{
       &.range{
         .month, .day{ display: inline-block; font-size: 1.2em; }
       }
-
     }
 
     .info{
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: #000;
+      background: rgba(0,0,0, 0.8);
       @extend .sans;
       color: $accent-color;
       font-size: 0.9em;
       h3{ color: $highlight-text-color; margin: 0; font-size: 1em; }
     }
 
+    .times{ display: none; }
+    &:hover .times{ display: block; }
   }
 }

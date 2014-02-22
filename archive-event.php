@@ -9,7 +9,17 @@
 
     <section class="event" id="vaudevillingham">
       <h2>Vaudevillingham</h2>
-      <div class="times">9PM &amp; 7 PM on the 15th of every month</times>
+
+      <div class="times">
+        9PM <span class="highlight ampersand">&amp;</span> 7 PM
+      </div>
+
+      <div class="date">
+        on <span class="accent">the</span>
+        <span class="highlight large">15th</span>
+        <span class="accent small">of</span>
+        every month
+      </div>
     </section>
 
     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
@@ -17,7 +27,7 @@
         <?php the_event_date(); ?>
 
         <?php $image = new VernacularImage(get_field('image')); ?>
-        <img src="<?php echo $image->crop(240, 240); ?>" />
+        <img src="<?php echo $image->crop(240, 320); ?>" />
 
         <div class="info">
           <h3>
