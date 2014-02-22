@@ -1,12 +1,12 @@
 body.post-type-archive-event{
   background-image: url(images/bg-events.jpg);
 
-  $events-column-width: 240px;
+  $events-column-width: 234px;
   $events-gutter-width: 8px;
 
   #main{
     width: $events-column-width * 4 + $events-gutter-width * 5;
-    margin-left: -$events-gutter-width;
+    margin-left: -$events-gutter-width / 2;
     padding: 0;
   }
 
@@ -94,7 +94,8 @@ body.post-type-archive-event{
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: rgba(0,0,0, 0.8);
+      background: rgba(0,0,0, 0.9);
+      padding: 2px 4px;
       @extend .sans;
       color: $accent-color;
       font-size: 0.9em;

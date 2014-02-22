@@ -492,12 +492,12 @@ ul.widgets {
 body.post-type-archive-event {
   background-image: url(images/bg-events.jpg); }
   body.post-type-archive-event #main {
-    width: 1000px;
-    margin-left: -8px;
+    width: 976px;
+    margin-left: -4px;
     padding: 0; }
   body.post-type-archive-event #vaudevillingham {
     background: #000;
-    width: 488px;
+    width: 476px;
     font-family: markus_inkregular;
     font-size: 1.4em;
     letter-spacing: 0.06em;
@@ -550,7 +550,7 @@ body.post-type-archive-event {
     background: url(images/pattern-transparent.png);
     border: 1px solid #000;
     float: left;
-    width: 240px;
+    width: 234px;
     height: 320px;
     border: 1px solid #000;
     margin: 4px; }
@@ -582,7 +582,8 @@ body.post-type-archive-event {
       position: absolute;
       bottom: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.9);
+      padding: 2px 4px;
       color: #2dc4ff;
       font-size: 0.9em; }
       body.post-type-archive-event section.event .info h3 {
