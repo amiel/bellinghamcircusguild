@@ -1,0 +1,1 @@
+$(document).ready(function(){$("section.event").click(function(){var e=$("a",this)[0];e&&(document.location=e.href)})});

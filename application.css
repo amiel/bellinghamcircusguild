@@ -560,6 +560,7 @@ body.events {
     position: relative;
     background: url(images/pattern-transparent.png);
     border: 1px solid #000;
+    cursor: pointer;
     float: left;
     width: 234px;
     height: 282px;
@@ -598,9 +599,11 @@ body.events {
       color: #2dc4ff;
       font-size: 0.9em; }
       body.events section.event .info h3 {
-        color: #fcee21;
         margin: 0;
         font-size: 1em; }
+        body.events section.event .info h3 a {
+          color: #fcee21;
+          text-decoration: none; }
     body.events section.event .times {
       display: none; }
     body.events section.event:hover .times {

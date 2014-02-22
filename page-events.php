@@ -10,7 +10,7 @@
   <section id="main" <?php if (count($events) == 0) echo 'class="no-events"'; ?>>
 
     <section class="event" id="vaudevillingham">
-      <h2>Vaudevillingham</h2>
+      <h2><a href="#vaudevillingham">Vaudevillingham</a></h2>
 
       <div class="times">
         9PM <span class="highlight ampersand">&amp;</span> 7 PM
@@ -34,8 +34,10 @@
 
           <div class="info">
             <h3>
-              <?php the_title(); ?>
-              <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-blue.png" />
+              <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+                <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-blue.png" />
+              </a>
             </h3>
 
             <div class="times">

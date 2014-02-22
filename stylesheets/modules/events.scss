@@ -80,6 +80,7 @@ body.events{
     overflow: hidden;
     position: relative;
     @include transparent-stripies;
+    cursor: pointer;
 
     float: left;
     width: $events-column-width;
@@ -115,7 +116,10 @@ body.events{
       @extend .sans;
       color: $accent-color;
       font-size: 0.9em;
-      h3{ color: $highlight-text-color; margin: 0; font-size: 1em; }
+      h3{
+        margin: 0; font-size: 1em;
+        a{ color: $highlight-text-color; text-decoration: none; }
+      }
     }
 
     .times{ display: none; }
