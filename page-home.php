@@ -7,21 +7,21 @@
       <p>We are jugglers, acrobats, aerialists, stilters, clowns, myth makers, experimental multi-medium theatricalists, and so very much more.</p>
     </section>
 
-    <section id="coming-soon">
-      <h3>Coming Soon</h3>
-      <h4>to the Cirque Lab</h4>
+    <?php $event = events_query()->random_post(); ?>
+    <?php if ($event) : _loop::load($post = $event); ?>
+      <section id="coming-soon">
+        <h3>Coming Soon</h3>
+        <h4>to the Cirque Lab</h4>
 
-      <hr />
+        <hr />
 
-      <?php $post = events_query()->random_post(); ?>
-      <?php _loop::load($post); ?>
-
-      <a href="<?php the_permalink(); ?>">
-        <time><?php the_event_date(); ?></time>
-        / <span class="description"><?php the_title(); ?></span>
-        <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
-      </a>
-    </section>
+        <a href="<?php the_permalink(); ?>">
+          <time><?php the_event_date(); ?></time>
+          / <span class="description"><?php the_title(); ?></span>
+          <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
+        </a>
+      </section>
+    <?php endif; _loop::reset(); ?>
 
     <section id="sponsors">
       Thank you to our sponsors:
