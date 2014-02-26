@@ -359,9 +359,15 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .alert a, .home.page #main #coming-soon a, body.events #no-events a, .home.page #main #sponsors .links, body.events section.event .info, #main h2 {
+.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, #main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
+
+a {
+  color: #fbee1b;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 ul.widgets {
   list-style-type: none;
@@ -376,14 +382,16 @@ ul.widgets {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
-  margin-bottom: 10px; }
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
   #sidebar .menu > li {
     margin: 0;
     padding: 0; }
   #sidebar .menu li {
     margin-bottom: 5px; }
+  #sidebar .menu li:last-child {
+    margin-bottom: 0; }
   #sidebar .menu a {
     font-family: markus_inkregular;
     font-size: 2.4em;
@@ -401,18 +409,18 @@ ul.widgets {
   font-style: italic;
   font-size: .9em; }
 
-.alert, .home.page #main #coming-soon, body.events #no-events {
+.alert, .home.page #main #coming-soon, body.events #main #no-events {
   text-align: center;
   margin-top: 2em;
   background: url(images/pattern-transparent.png);
   border: 1px solid #000;
   padding: 23px; }
-  .alert h3, .home.page #main #coming-soon h3, body.events #no-events h3 {
+  .alert h3, .home.page #main #coming-soon h3, body.events #main #no-events h3 {
     margin: 0;
     font-size: 2em;
     text-transform: uppercase;
     color: #fcee21; }
-  .alert h4, .home.page #main #coming-soon h4, body.events #no-events h4 {
+  .alert h4, .home.page #main #coming-soon h4, body.events #main #no-events h4 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 0.08em;
     font-style: italic;
@@ -423,18 +431,18 @@ ul.widgets {
     display: inline-block;
     padding: 0 41px;
     margin: 0.35em 0; }
-  .alert hr, .home.page #main #coming-soon hr, body.events #no-events hr {
+  .alert hr, .home.page #main #coming-soon hr, body.events #main #no-events hr {
     width: 60%;
     margin: 0.65em auto 1em; }
-  .alert a, .home.page #main #coming-soon a, body.events #no-events a {
+  .alert a, .home.page #main #coming-soon a, body.events #main #no-events a {
     margin-top: 1em;
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
     color: #2dc4ff; }
-    .alert a .highlight, .home.page #main #coming-soon a .highlight, body.events #no-events a .highlight {
+    .alert a .highlight, .home.page #main #coming-soon a .highlight, body.events #main #no-events a .highlight {
       color: #fcee21; }
-    .alert a img, .home.page #main #coming-soon a img, body.events #no-events a img {
+    .alert a img, .home.page #main #coming-soon a img, body.events #main #no-events a img {
       margin-left: 0.6em; }
 
 .home.page {
@@ -498,118 +506,152 @@ body.events {
     width: 976px;
     margin-left: -4px;
     padding: 0; }
-  body.events .no-events #vaudevillingham {
-    width: 968px;
-    background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
-    background-position: center left, center right;
-    background-repeat: no-repeat;
-    padding: 44px 264px 0 284px;
-    margin: 0;
-    float: none; }
-  body.events #no-events {
-    padding: 23px 168px; }
-  body.events #vaudevillingham {
-    background: #000;
-    width: 476px;
-    font-family: markus_inkregular;
-    font-size: 1.4em;
-    letter-spacing: 0.06em;
-    -webkit-font-smoothing: antialiased;
-    padding: 44px 48px; }
-    body.events #vaudevillingham h2 {
-      color: transparent;
-      font: 0/0 a;
-      text-shadow: none;
+    body.events #main .no-events #vaudevillingham {
+      width: 968px;
+      background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
+      background-position: center left, center right;
       background-repeat: no-repeat;
-      background-image: url(images/vaudevillingham.png);
-      width: 161px;
-      height: 203px;
-      box-sizing: content-box;
-      padding-right: 12px;
-      border-right: 1px solid #fff;
-      float: left; }
-    body.events #vaudevillingham .times, body.events #vaudevillingham .date {
-      margin-left: 173px; }
-    body.events #vaudevillingham .times {
-      display: block;
-      padding: 12px 0 12px 24px;
-      font-size: 2em;
-      border-bottom: 1px solid #fff; }
-      body.events #vaudevillingham .times .ampersand {
-        display: inline-block;
-        color: transparent;
-        background: url(images/ampersand.png) no-repeat center center;
-        width: 22px;
-        height: 1em;
-        margin: 0 0.1em; }
-    body.events #vaudevillingham .date {
-      padding: 16px;
-      background: url(images/style-arrow-fill.png) no-repeat right center;
-      font-size: 1.4em; }
-      body.events #vaudevillingham .date .small {
-        font-size: 1em/1.6em; }
-      body.events #vaudevillingham .date .large {
-        font-size: 1.6em; }
-      body.events #vaudevillingham .date .accent:after {
-        content: " ";
-        display: block; }
-    body.events #vaudevillingham .highlight {
-      color: #fcee21; }
-    body.events #vaudevillingham .accent {
-      color: #2dc4ff; }
-  body.events section.event {
-    overflow: hidden;
-    position: relative;
-    background: url(images/pattern-transparent.png);
-    border: 1px solid #000;
-    cursor: pointer;
-    float: left;
-    width: 234px;
-    height: 282px;
-    border: 1px solid #000;
-    margin: 4px; }
-    body.events section.event time {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 5em;
-      height: 5em;
-      margin: -2.5em 0 0 -2.5em;
-      border-radius: 2.5em;
-      padding-top: 1em;
-      text-align: center;
+      padding: 44px 264px 0 284px;
+      margin: 0;
+      float: none; }
+    body.events #main #no-events {
+      padding: 23px 168px; }
+    body.events #main #vaudevillingham {
+      background: #000;
+      width: 476px;
       font-family: markus_inkregular;
-      font-size: 1.5em;
+      font-size: 1.4em;
       letter-spacing: 0.06em;
       -webkit-font-smoothing: antialiased;
-      background: rgba(45, 196, 255, 0.7); }
-      body.events section.event time .month, body.events section.event time .day, body.events section.event time .separator {
+      padding: 44px 48px; }
+      body.events #main #vaudevillingham h2 {
+        color: transparent;
+        font: 0/0 a;
+        text-shadow: none;
+        background-repeat: no-repeat;
+        background-image: url(images/vaudevillingham.png);
+        width: 161px;
+        height: 203px;
+        box-sizing: content-box;
+        padding-right: 12px;
+        border-right: 1px solid #fff;
+        float: left; }
+      body.events #main #vaudevillingham .times, body.events #main #vaudevillingham .date {
+        margin-left: 173px; }
+      body.events #main #vaudevillingham .times {
+        display: block;
+        padding: 12px 0 12px 24px;
+        font-size: 2em;
+        border-bottom: 1px solid #fff; }
+        body.events #main #vaudevillingham .times .ampersand {
+          display: inline-block;
+          color: transparent;
+          background: url(images/ampersand.png) no-repeat center center;
+          width: 22px;
+          height: 1em;
+          margin: 0 0.1em; }
+      body.events #main #vaudevillingham .date {
+        padding: 16px;
+        background: url(images/style-arrow-fill.png) no-repeat right center;
+        font-size: 1.4em; }
+        body.events #main #vaudevillingham .date .small {
+          font-size: 1em/1.6em; }
+        body.events #main #vaudevillingham .date .large {
+          font-size: 1.6em; }
+        body.events #main #vaudevillingham .date .accent:after {
+          content: " ";
+          display: block; }
+      body.events #main #vaudevillingham .highlight {
+        color: #fcee21; }
+      body.events #main #vaudevillingham .accent {
+        color: #2dc4ff; }
+    body.events #main section.event {
+      overflow: hidden;
+      position: relative;
+      background: url(images/pattern-transparent.png);
+      border: 1px solid #000;
+      cursor: pointer;
+      float: left;
+      width: 234px;
+      height: 282px;
+      border: 1px solid #000;
+      margin: 4px; }
+      body.events #main section.event img {
+        border: none; }
+      body.events #main section.event time {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 5em;
+        height: 5em;
+        margin: -2.5em 0 0 -2.5em;
+        border-radius: 2.5em;
+        padding-top: 1em;
+        text-align: center;
+        font-family: markus_inkregular;
+        font-size: 1.5em;
+        letter-spacing: 0.06em;
+        -webkit-font-smoothing: antialiased;
+        background: rgba(45, 196, 255, 0.7); }
+        body.events #main section.event time .month, body.events #main section.event time .day, body.events #main section.event time .separator {
+          display: block; }
+        body.events #main section.event time .day {
+          font-size: 2em; }
+        body.events #main section.event time .separator {
+          margin: -0.3em 0; }
+        body.events #main section.event time.range .month, body.events #main section.event time.range .day {
+          display: inline-block;
+          font-size: 1.2em; }
+      body.events #main section.event .info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 2px 4px;
+        color: #2dc4ff;
+        font-size: 0.9em; }
+        body.events #main section.event .info h3 {
+          margin: 0;
+          font-size: 1em; }
+          body.events #main section.event .info h3 a {
+            color: #fcee21;
+            text-decoration: none; }
+          body.events #main section.event .info h3 .arrow {
+            margin-left: 0.25em;
+            display: inline-block;
+            color: transparent;
+            width: 16px;
+            background: url(images/arrow-blue.png) center center no-repeat; }
+      body.events #main section.event .times {
+        display: none; }
+      body.events #main section.event:hover .times {
         display: block; }
-      body.events section.event time .day {
-        font-size: 2em; }
-      body.events section.event time .separator {
-        margin: -0.3em 0; }
-      body.events section.event time.range .month, body.events section.event time.range .day {
-        display: inline-block;
-        font-size: 1.2em; }
-    body.events section.event .info {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 2px 4px;
-      color: #2dc4ff;
-      font-size: 0.9em; }
-      body.events section.event .info h3 {
-        margin: 0;
-        font-size: 1em; }
-        body.events section.event .info h3 a {
-          color: #fcee21;
-          text-decoration: none; }
-    body.events section.event .times {
-      display: none; }
-    body.events section.event:hover .times {
-      display: block; }
+
+body.single-event #main h1 {
+  font-family: markus_inkregular;
+  font-size: 3.1em;
+  letter-spacing: 0.06em;
+  -webkit-font-smoothing: antialiased;
+  margin: 10px 0 0;
+  color: #fbee1b; }
+body.single-event #main h2 {
+  font-size: 1.3em;
+  margin: 0;
+  color: #2dc4ff; }
+body.single-event #main dl {
+  overflow: hidden;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+  body.single-event #main dl dt {
+    float: left;
+    margin-right: 0.5em;
+    color: #2dc4ff; }
+  body.single-event #main dl dd {
+    margin-left: 4em; }
+body.single-event #main img {
+  float: left;
+  margin: 0 2em 1em 0; }
 
 body.location #main {
   width: 956px;
@@ -629,6 +671,8 @@ body {
   background-color: black;
   color: white;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+  body p {
+    line-height: 1.5em; }
 
 .container, .wrapper, #navbar div.menu, h1#logo, header, footer.page nav .menu, footer.page #sub-footer .container {
   margin: 0 auto;
@@ -644,6 +688,8 @@ body {
   padding-right: 130px;
   margin-left: 10px;
   width: 720px; }
+  #main img {
+    border: 1px solid rgba(255, 255, 255, 0.6); }
 
 #sidebar {
   float: left;
@@ -652,7 +698,7 @@ body {
 hr {
   height: 1px;
   border: none;
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.6); }
 
 #navbar {
   position: fixed;

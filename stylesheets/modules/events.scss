@@ -8,121 +8,130 @@ body.events{
     width: $events-column-width * 4 + $events-gutter-width * 5;
     margin-left: -$events-gutter-width / 2;
     padding: 0;
-  }
 
 
-  .no-events #vaudevillingham{
-    width: $events-column-width * 4 + $events-gutter-width * 4;
-    background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
-    background-position: center left, center right;
-    background-repeat: no-repeat;
-    padding: 44px 264px 0 284px;
-    margin: 0;
-    float: none;
-  }
-
-  #no-events{
-    @extend .alert;
-    padding: 23px 168px;
-  }
-
-  #vaudevillingham{
-    background: #000;
-    width: $events-column-width * 2 + $events-gutter-width;
-    @include markus(1.4em);
-    padding: 44px 48px;
-
-    h2{
-      @include hide-text;
+    .no-events #vaudevillingham{
+      width: $events-column-width * 4 + $events-gutter-width * 4;
+      background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
+      background-position: center left, center right;
       background-repeat: no-repeat;
-      background-image: url(images/vaudevillingham.png);
-      width: 161px;
-      height: 203px;
-      box-sizing: content-box;
-      padding-right: 12px;
-      border-right: 1px solid #fff;
+      padding: 44px 264px 0 284px;
+      margin: 0;
+      float: none;
+    }
+
+    #no-events{
+      @extend .alert;
+      padding: 23px 168px;
+    }
+
+    #vaudevillingham{
+      background: #000;
+      width: $events-column-width * 2 + $events-gutter-width;
+      @include markus(1.4em);
+      padding: 44px 48px;
+
+      h2{
+        @include hide-text;
+        background-repeat: no-repeat;
+        background-image: url(images/vaudevillingham.png);
+        width: 161px;
+        height: 203px;
+        box-sizing: content-box;
+        padding-right: 12px;
+        border-right: 1px solid #fff;
+
+        float: left;
+      }
+
+      .times, .date{ margin-left: 161px + 12px; }
+
+      .times{
+        display: block;
+        padding: 12px 0 12px 24px;
+        font-size: 2em;
+        border-bottom: 1px solid #fff;
+
+        .ampersand{
+          display: inline-block;
+          color: transparent;
+          background: url(images/ampersand.png) no-repeat center center;
+          width: 22px;
+          height: 1em;
+          margin: 0 0.1em;
+        }
+      }
+
+      .date{
+        padding: 16px;
+        background: url(images/style-arrow-fill.png) no-repeat right center;
+        font-size: 1.4em;
+        .small{ font-size: 1em/1.6em; }
+        .large{ font-size: 1.6em; }
+        .accent:after { content: " "; display: block; }
+      }
+
+      .highlight{ color: $highlight-text-color; }
+      .accent{ color: $accent-color; }
+    }
+
+    section.event{
+      overflow: hidden;
+      position: relative;
+      @include transparent-stripies;
+      cursor: pointer;
 
       float: left;
-    }
+      width: $events-column-width;
+      height: 282px;
+      border: 1px solid #000;
+      margin: $events-gutter-width / 2;
+      img{ border: none; }
 
-    .times, .date{ margin-left: 161px + 12px; }
+      time{
+        position: absolute; left: 50%; top: 50%;
+        width: 5em; height: 5em;
+        margin: -2.5em 0 0 -2.5em;
+        border-radius: 2.5em;
+        padding-top: 1em;
+        text-align: center;
+        @include markus(1.5em);
+        background: rgba(45, 196, 255, 0.7);
 
-    .times{
-      display: block;
-      padding: 12px 0 12px 24px;
-      font-size: 2em;
-      border-bottom: 1px solid #fff;
+        .month, .day, .separator{ display: block; }
+        .day{ font-size: 2em; }
+        .separator{ margin: -0.3em 0; }
 
-      .ampersand{
-        display: inline-block;
-        color: transparent;
-        background: url(images/ampersand.png) no-repeat center center;
-        width: 22px;
-        height: 1em;
-        margin: 0 0.1em;
+        &.range{
+          .month, .day{ display: inline-block; font-size: 1.2em; }
+        }
       }
-    }
 
-    .date{
-      padding: 16px;
-      background: url(images/style-arrow-fill.png) no-repeat right center;
-      font-size: 1.4em;
-      .small{ font-size: 1em/1.6em; }
-      .large{ font-size: 1.6em; }
-      .accent:after { content: " "; display: block; }
-    }
+      .info{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0, 0.9);
+        padding: 2px 4px;
+        @extend .sans;
+        color: $accent-color;
+        font-size: 0.9em;
+        h3{
+          margin: 0; font-size: 1em;
+          a{ color: $highlight-text-color; text-decoration: none; }
+          .arrow{
+            margin-left: 0.25em;
+            display: inline-block;
+            color: transparent;
+            width: 16px;
+            background: url(images/arrow-blue.png) center center no-repeat;
 
-    .highlight{ color: $highlight-text-color; }
-    .accent{ color: $accent-color; }
-  }
-
-  section.event{
-    overflow: hidden;
-    position: relative;
-    @include transparent-stripies;
-    cursor: pointer;
-
-    float: left;
-    width: $events-column-width;
-    height: 282px;
-    border: 1px solid #000;
-    margin: $events-gutter-width / 2;
-
-    time{
-      position: absolute; left: 50%; top: 50%;
-      width: 5em; height: 5em;
-      margin: -2.5em 0 0 -2.5em;
-      border-radius: 2.5em;
-      padding-top: 1em;
-      text-align: center;
-      @include markus(1.5em);
-      background: rgba(45, 196, 255, 0.7);
-
-      .month, .day, .separator{ display: block; }
-      .day{ font-size: 2em; }
-      .separator{ margin: -0.3em 0; }
-
-      &.range{
-        .month, .day{ display: inline-block; font-size: 1.2em; }
+          }
+        }
       }
-    }
 
-    .info{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(0,0,0, 0.9);
-      padding: 2px 4px;
-      @extend .sans;
-      color: $accent-color;
-      font-size: 0.9em;
-      h3{
-        margin: 0; font-size: 1em;
-        a{ color: $highlight-text-color; text-decoration: none; }
-      }
+      .times{ display: none; }
+      &:hover .times{ display: block; }
     }
-
-    .times{ display: none; }
-    &:hover .times{ display: block; }
   }
 }

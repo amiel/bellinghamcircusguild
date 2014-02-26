@@ -1,0 +1,29 @@
+body.single-event{
+
+  #main{
+
+    h1{
+      @include markus(3.1em);
+      margin: 10px 0 0;
+      color: $highlight-color;
+    }
+
+    h2{
+      font-size: 1.3em;
+      margin: 0;
+      color: $accent-color;
+    }
+
+    dl{
+      overflow: hidden;
+      @extend .sans;
+      @include bottom-rule;
+      dt{ float: left; margin-right: 0.5em; color: $accent-color; }
+      dd{ margin-left: 4em; }
+    }
+
+    img{ float: left; margin: 0 2em 1em 0; }
+    .description{
+    }
+  }
+}

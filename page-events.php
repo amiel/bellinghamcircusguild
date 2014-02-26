@@ -36,7 +36,7 @@
             <h3>
               <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
-                <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-blue.png" />
+                <span class="arrow">&rarr;</span>
               </a>
             </h3>
 
