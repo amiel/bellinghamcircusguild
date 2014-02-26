@@ -5,11 +5,11 @@ require_once('modules/events.php');
 
 function register_custom_post_types() {
   $event = new VernacularPostType('event');
-  $event->slug = 'events';
+  // $event->slug = 'events';
   $event->register();
 
   $class = new VernacularPostType('workshop');
-  $class->slug = 'classes';
+  // $class->slug = 'classes';
   $class->labels('Class', 'Classes');
   $class->register();
 }
