@@ -7,9 +7,7 @@ ul.widgets{
   @include reset-list;
   @include bottom-rule;
 
-  li{
-    margin-bottom: 5px;
-  }
+  li{ margin-bottom: 5px; }
   li:last-child{ margin-bottom: 0; }
 
   a{
