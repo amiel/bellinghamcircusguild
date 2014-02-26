@@ -9,6 +9,7 @@ body{
   background-color: $background-color;
   color: $text-color;
   font-family: $georgia;
+  p{ line-height: 1.5em; }
 }
 
 .container{
@@ -33,6 +34,8 @@ $sidebar-width: 220px;
   padding-right: 130px;
   margin-left: 10px;
   width: $main-section-width;
+
+  img{ border: 1px solid $border-color; }
 }
 
 #sidebar{
@@ -40,4 +43,4 @@ $sidebar-width: 220px;
   width: $sidebar-width;
 }
 
-hr{ height: 1px; border: none; background-color: #fff; }
+hr{ height: 1px; border: none; background-color: $border-color; }

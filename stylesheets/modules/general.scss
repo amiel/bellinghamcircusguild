@@ -13,3 +13,18 @@
     padding: 0;
   }
 }
+
+a{
+  color: $highlight-color;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+@mixin bottom-rule {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid $border-color;
+}

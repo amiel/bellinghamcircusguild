@@ -18,6 +18,8 @@ $footer-nav-height: 38px;
 $sub-footer-height: 52px;
 $footer-height: $footer-nav-height + $sub-footer-height;
 
+$border-color: rgba(255, 255, 255, 0.6);
+
 #wpadminbar{ display: none; }
 // Overwrite wordpress-admin styles in <head>
 html[lang] { margin-top: 0 !important; }
@@ -30,6 +32,7 @@ html[lang] { margin-top: 0 !important; }
 @import "modules/alert";
 @import "modules/home";
 @import "modules/events";
+@import "modules/event";
 @import "modules/location";
 
 @import "layout/general";

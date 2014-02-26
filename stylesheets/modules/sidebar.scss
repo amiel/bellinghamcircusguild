@@ -5,13 +5,12 @@ ul.widgets{
 
 #sidebar .menu{
   @include reset-list;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  @include bottom-rule;
 
   li{
     margin-bottom: 5px;
   }
+  li:last-child{ margin-bottom: 0; }
 
   a{
     @include markus(2.4em);
