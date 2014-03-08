@@ -13,7 +13,7 @@
       <h2><a href="#vaudevillingham">Vaudevillingham</a></h2>
 
       <div class="times">
-        9PM <span class="highlight ampersand">&amp;</span> 7 PM
+        9 PM <span class="highlight ampersand">&amp;</span> 7 PM
       </div>
 
       <div class="date">
