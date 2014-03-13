@@ -10,7 +10,7 @@ body.events{
     padding: 0;
 
 
-    .no-events #vaudevillingham{
+    &.no-events #vaudevillingham{
       width: $events-column-width * 4 + $events-gutter-width * 4;
       background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
       background-position: center left, center right;

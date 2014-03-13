@@ -508,7 +508,7 @@ body.events {
     width: 976px;
     margin-left: -4px;
     padding: 0; }
-    body.events #main .no-events #vaudevillingham {
+    body.events #main.no-events #vaudevillingham {
       width: 968px;
       background-image: url(images/events-placeholder1.jpg), url(images/events-placeholder2.jpg);
       background-position: center left, center right;
