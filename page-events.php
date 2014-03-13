@@ -7,7 +7,7 @@
   <section id="main" <?php if (count($events) == 0) echo 'class="no-events"'; ?>>
 
     <section class="event" id="vaudevillingham">
-      <h2><a href="#vaudevillingham">Vaudevillingham</a></h2>
+      <h2><a href="/about/vaudevillingham">Vaudevillingham</a></h2>
 
       <div class="times">
         9 PM <span class="highlight ampersand">&amp;</span> 7 PM
@@ -50,10 +50,10 @@
 
         <hr />
 
-        <a href="#donate">
+        <a href="/support-us/donate">
           <span class="description">You should donate so we can make even more fun events for you to attend!</span>
           <span class="highlight">DONATE</span>
-          <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" />
+          <img src="<?= bloginfo('stylesheet_directory') ?>/images/arrow-yellow.png" class="arrow" />
         </a>
       </section>
     <?php endif; ?>

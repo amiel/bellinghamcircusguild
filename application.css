@@ -655,13 +655,17 @@ body.single-event #main img {
   float: left;
   margin: 0 2em 1em 0; }
 
-body.location #main {
-  width: 956px;
-  padding: 0;
-  margin: 0 2px; }
-body.location #map {
-  width: 100%;
-  height: 460px; }
+body.location {
+  /* Google maps does weird things with the bg-fade */ }
+  body.location #bg-fade {
+    display: none; }
+  body.location #main {
+    width: 956px;
+    padding: 0;
+    margin: 0 2px; }
+  body.location #map {
+    width: 100%;
+    height: 460px; }
 
 html, body {
   position: relative;
@@ -692,6 +696,8 @@ body {
   width: 720px; }
   #main img {
     border: 1px solid rgba(255, 255, 255, 0.6); }
+  #main img.arrow {
+    border: none; }
 
 #sidebar {
   float: left;
@@ -701,6 +707,9 @@ hr {
   height: 1px;
   border: none;
   background-color: rgba(255, 255, 255, 0.6); }
+
+blockquote {
+  font-style: italic; }
 
 #navbar {
   position: fixed;

@@ -36,6 +36,7 @@ $sidebar-width: 220px;
   width: $main-section-width;
 
   img{ border: 1px solid $border-color; }
+  img.arrow{ border: none; }
 }
 
 #sidebar{
@@ -44,3 +45,5 @@ $sidebar-width: 220px;
 }
 
 hr{ height: 1px; border: none; background-color: $border-color; }
+
+blockquote{ font-style: italic; }

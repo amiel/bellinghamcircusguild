@@ -1,4 +1,6 @@
 body.location{
+  /* Google maps does weird things with the bg-fade */
+  #bg-fade{ display: none; }
   #main{
     // TODO: Standardize main-full
     width: 720px + 220px + 16px;
