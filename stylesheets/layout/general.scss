@@ -20,7 +20,7 @@ body{
 .wrapper{
   @extend .container;
   padding-top: $header-height;
-  padding-bottom: $footer-height + 10px;
+  padding-bottom: $footer-height + 10px + 400px; // 400px temporarily for scroll
   overflow: hidden;
 }
 

@@ -16,6 +16,12 @@ function register_custom_post_types() {
 }
 add_action('init', 'register_custom_post_types');
 
+function title($t = null) {
+  global $aTitle;
+  if ($t) $aTitle = $t;
+  return $aTitle;
+}
+
 function get_slug() {
   $slug = basename(get_permalink());
   do_action('before_slug', $slug);

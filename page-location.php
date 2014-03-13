@@ -1,8 +1,5 @@
+<?php title(get_the_title()); ?>
 <?php get_header(); ?>
-
-  <header>
-    <h1><?php the_title(); ?></h1>
-  </header>
 
   <div class="wrapper">
     <section id="main">

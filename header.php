@@ -15,10 +15,19 @@
 </head>
 
 <body <?php body_class(get_slug()); ?>>
+  <div id="bg-fade"></div>
+
   <div id="navbar">
     <?php wp_nav_menu(array('container_class' => 'menu', 'theme_location' => 'header-menu')); ?>
   </div>
 
-  <h1 id="logo">
-    <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
-  </h1>
+  <header>
+    <h1 id="logo">
+      <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
+    </h1>
+
+
+    <?php if (title()) : ?>
+      <h1 id="title"><?php echo title(); ?></h1>
+    <?php endif; ?>
+  </header>

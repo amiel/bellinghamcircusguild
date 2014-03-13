@@ -1,10 +1,7 @@
+<?php title("Events"); ?>
 <?php get_header(); ?>
 
 <?php $events = events(); ?>
-
-<header>
-  <h1>Events</h1>
-</header>
 
 <div class="wrapper">
   <section id="main" <?php if (count($events) == 0) echo 'class="no-events"'; ?>>

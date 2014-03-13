@@ -2,6 +2,7 @@ $home-footer-nav-height: 142px;
 
 .home.page{
   background-image: url(images/bg-home.jpg);
+  #bg-fade{ background-image: none; }
   .wrapper{ padding-bottom: $home-footer-nav-height + $sub-footer-height + 10px; }
 
   #main{
