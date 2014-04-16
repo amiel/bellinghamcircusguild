@@ -4,11 +4,9 @@
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
   <div class="wrapper">
     <section id="main">
-
-      <p>Just use this form and a member of the guild will get back to you as soon as possible.</p>
+      <?php the_content(); ?>
 
       <form action="<?php bloginfo( 'stylesheet_directory' ); ?>/send-contact.php" id="new_inquiry" method="post">
-
         <div class='field'>
           <label class="required" for="inquiry_name">Name *</label>
           <input id="inquiry_name" name="inquiry[name]" size="30" type="text" />

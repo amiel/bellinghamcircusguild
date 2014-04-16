@@ -30,11 +30,15 @@ html[lang] { margin-top: 0 !important; }
 @import "modules/general";
 @import "modules/sidebar";
 @import "modules/alert";
+@import "modules/forms";
+
+
 @import "modules/home";
 @import "modules/events";
 @import "modules/event";
 @import "modules/location";
 @import "modules/contact";
+@import "modules/hire-a-performer";
 
 @import "layout/general";
 @import "layout/header";

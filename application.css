@@ -445,6 +445,22 @@ ul.widgets {
     .alert a img, .home.page #main #coming-soon a img, body.events #main #no-events a img {
       margin-left: 0.6em; }
 
+form {
+  padding-top: 1em; }
+  form fieldset {
+    padding: 0;
+    margin: 1.5em 0 0 0;
+    border: none; }
+    form fieldset legend {
+      font-size: 1.2em; }
+  form .field {
+    margin: 0.5em 0px; }
+    form .field label {
+      display: block;
+      padding: 1em 0px; }
+  form #email_label, form #email {
+    display: none; }
+
 .home.page {
   background-image: url(images/bg-home.jpg); }
   .home.page #bg-fade {
@@ -667,17 +683,12 @@ body.location {
     width: 100%;
     height: 460px; }
 
-.page.contact #email_label, .page.contact #email {
-  display: none; }
-.page.contact form {
-  padding-top: 12px; }
-  .page.contact form label {
-    width: 150px;
-    float: left; }
-  .page.contact form .actions {
-    margin-left: 150px; }
-  .page.contact form .field {
-    margin: 12px 0px; }
+.page.contact form label {
+  width: 150px;
+  float: left;
+  padding: 0; }
+.page.contact form .actions {
+  margin-left: 150px; }
 
 html, body {
   position: relative;
