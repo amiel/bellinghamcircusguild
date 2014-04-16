@@ -1,0 +1,10 @@
+.page.contact{
+  #email_label, #email{ display: none; } // Honeypot
+
+  form{
+    padding-top:12px;
+    label{ width:150px; float:left; }
+    .actions{ margin-left:150px; }
+    .field{ margin:12px 0px; }
+  }
+}

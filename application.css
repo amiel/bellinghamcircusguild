@@ -667,6 +667,18 @@ body.location {
     width: 100%;
     height: 460px; }
 
+.page.contact #email_label, .page.contact #email {
+  display: none; }
+.page.contact form {
+  padding-top: 12px; }
+  .page.contact form label {
+    width: 150px;
+    float: left; }
+  .page.contact form .actions {
+    margin-left: 150px; }
+  .page.contact form .field {
+    margin: 12px 0px; }
+
 html, body {
   position: relative;
   height: 100%; }
