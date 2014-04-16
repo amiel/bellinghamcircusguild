@@ -1,10 +1,7 @@
+<?php title("Event Details"); ?>
 <?php get_header(); ?>
 
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
-  <header>
-    <h1>Event Details</h1>
-  </header>
-
   <div class="wrapper">
     <section id="main">
 
