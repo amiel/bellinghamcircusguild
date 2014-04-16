@@ -5,6 +5,7 @@
   <div class="wrapper">
     <section id="main">
       <?php the_content(); ?>
+      &nbsp; <!-- Don't let the float collapse -->
     </section>
     <?php get_sidebar(); ?>
   </div>
