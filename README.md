@@ -9,8 +9,8 @@ Questions:
 * Style contact form? Copy for thanks page?
 * I made up copy for Donation page...
 * Find a performer form
+* Classes
 
 ### TODO:
 
 * Vaudevillingham form
-* Classes
