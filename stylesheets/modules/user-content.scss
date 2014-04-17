@@ -1,0 +1,6 @@
+.user-content{
+  h2{
+    @extend .sans;
+    color: $accent-color;
+  }
+}

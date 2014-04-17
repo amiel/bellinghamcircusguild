@@ -4,8 +4,9 @@
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
   <div class="wrapper">
     <section id="main">
-      <?php the_content(); ?>
-      &nbsp; <!-- Don't let the float collapse -->
+      <div class="user-content">
+        <?php the_content(); ?>
+      </div>
     </section>
     <?php get_sidebar(); ?>
   </div>

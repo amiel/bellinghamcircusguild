@@ -4,7 +4,9 @@
 <?php if (have_posts()) while (have_posts()) : the_post(); ?>
   <div class="wrapper">
     <section id="main">
-      <?php the_content(); ?>
+      <div class="user-content">
+        <?php the_content(); ?>
+      </div>
 
       <form action="<?php bloginfo( 'stylesheet_directory' ); ?>/send-contact.php" id="new_inquiry" method="post">
         <div class='field'>

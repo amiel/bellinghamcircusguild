@@ -1,9 +1,40 @@
-.workshops.page{
+.classes.page{
 
   background-image: url(images/bg-classes.jpg);
-  // #bg-fade{ background-image: none; }
+  #bg-fade{ background-image: none; }
 
   .workshop{
+    border: 1px solid $accent-color;
+    margin-bottom: 2em;
 
+    .meta{
+      background-color: $accent-color;
+      padding: 1em;
+
+      h2{
+        @include markus(2.4em);
+        color: $highlight-text-color;
+        margin: 0;
+      }
+
+      h3{
+        @extend .sans;
+        color: #000;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+
+      dl{
+        margin: 0;
+        overflow: hidden;
+        @extend .sans;
+        dt{ float: left; margin-right: 0.5em; color: #000; }
+        dd{ margin-left: 6em; }
+      }
+    }
+
+    .description{ padding: 1em; }
   }
+
 }

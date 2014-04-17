@@ -359,7 +359,7 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, #main h2 {
+.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .user-content h2, .classes.page .workshop .meta h3, .classes.page .workshop .meta dl, h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -518,6 +518,25 @@ form {
         background-image: url(images/icon-space.png);
         background-position-y: 36px; }
 
+body.location {
+  /* Google maps does weird things with the bg-fade */ }
+  body.location #bg-fade {
+    display: none; }
+  body.location #main {
+    width: 956px;
+    padding: 0;
+    margin: 0 2px; }
+  body.location #map {
+    width: 100%;
+    height: 460px; }
+
+.page.contact form label {
+  width: 150px;
+  float: left;
+  padding: 0; }
+.page.contact form .actions {
+  margin-left: 150px; }
+
 body.events {
   background-image: url(images/bg-events.jpg); }
   body.events #main {
@@ -671,27 +690,41 @@ body.single-event #main img {
   float: left;
   margin: 0 2em 1em 0; }
 
-body.location {
-  /* Google maps does weird things with the bg-fade */ }
-  body.location #bg-fade {
-    display: none; }
-  body.location #main {
-    width: 956px;
-    padding: 0;
-    margin: 0 2px; }
-  body.location #map {
-    width: 100%;
-    height: 460px; }
+.user-content h2 {
+  color: #2dc4ff; }
 
-.page.contact form label {
-  width: 150px;
-  float: left;
-  padding: 0; }
-.page.contact form .actions {
-  margin-left: 150px; }
-
-.workshops.page {
+.classes.page {
   background-image: url(images/bg-classes.jpg); }
+  .classes.page #bg-fade {
+    background-image: none; }
+  .classes.page .workshop {
+    border: 1px solid #2dc4ff;
+    margin-bottom: 2em; }
+    .classes.page .workshop .meta {
+      background-color: #2dc4ff;
+      padding: 1em; }
+      .classes.page .workshop .meta h2 {
+        font-family: markus_inkregular;
+        font-size: 2.4em;
+        letter-spacing: 0.06em;
+        -webkit-font-smoothing: antialiased;
+        color: #fcee21;
+        margin: 0; }
+      .classes.page .workshop .meta h3 {
+        color: #000;
+        margin: 0;
+        text-transform: uppercase; }
+      .classes.page .workshop .meta dl {
+        margin: 0;
+        overflow: hidden; }
+        .classes.page .workshop .meta dl dt {
+          float: left;
+          margin-right: 0.5em;
+          color: #000; }
+        .classes.page .workshop .meta dl dd {
+          margin-left: 6em; }
+    .classes.page .workshop .description {
+      padding: 1em; }
 
 html, body {
   position: relative;

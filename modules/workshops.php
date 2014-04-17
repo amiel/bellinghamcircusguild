@@ -4,7 +4,6 @@ function link_to($url) {
   return "<a href=\"$url\">$url</a>";
 }
 
-
 function mail_to($email) {
   return "<a href=\"mailto:$email\">$email</a>";
 }

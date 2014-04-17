@@ -6,13 +6,11 @@ require_once('modules/workshops.php');
 
 function register_custom_post_types() {
   $event = new VernacularPostType('event');
-  // $event->slug = 'events';
   $event->register();
 
-  $class = new VernacularPostType('workshop');
-  $class->slug = 'classes';
-  $class->labels('Class', 'Classes');
-  $class->register();
+  $workshop = new VernacularPostType('workshop');
+  $workshop->labels('Class', 'Classes');
+  $workshop->register();
 }
 add_action('init', 'register_custom_post_types');
 

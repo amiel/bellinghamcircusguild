@@ -1,11 +1,12 @@
 <?php title(get_the_title()); ?>
 <?php get_header(); ?>
-OH HAI!!!!!!
 
 <div class="wrapper">
   <section id="main">
     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
-      <?php the_content(); ?>
+      <div class="user-content">
+        <?php the_content(); ?>
+      </div>
     <?php endwhile; ?>
 
     <?php $workshops = classes(); ?>
@@ -14,38 +15,39 @@ OH HAI!!!!!!
       <?php foreach ($workshops as $post) : _loop::load($post); ?>
 
         <section class="workshop" id="workshop_<?php the_ID(); ?>">
-          <h2><?php the_title(); ?></h2>
-          <h3><?php the_field('days'); ?></h2>
+          <div class="meta">
+            <h2><?php the_title(); ?></h2>
+            <h3><?php the_field('days'); ?></h2>
 
-          <dl>
-            <?php if (get_field('times')) : ?>
-              <dt>Times:</dt>
-              <dd><?php the_field('times'); ?></dd>
-            <?php endif; ?>
+            <dl>
+              <?php if (get_field('times')) : ?>
+                <dt>Times:</dt>
+                <dd><?php the_field('times'); ?></dd>
+              <?php endif; ?>
 
-            <dt>Location:</dt>
-            <dd>
-              <a href="<?php the_field('location_url'); ?>">
-                <?php the_field('location'); ?>
-              </a>
-            </dd>
+              <dt>Location:</dt>
+              <dd>
+                <a href="<?php the_field('location_url'); ?>">
+                  <?php the_field('location'); ?>
+                </a>
+              </dd>
 
-            <?php if (get_field('cost')) : ?>
-              <dt>Cost:</dt>
-              <dd><?php the_field('cost'); ?></dd>
-            <?php endif; ?>
+              <?php if (get_field('cost')) : ?>
+                <dt>Cost:</dt>
+                <dd><?php the_field('cost'); ?></dd>
+              <?php endif; ?>
 
-            <?php if (get_field('ages')) : ?>
-              <dt>Ages:</dt>
-              <dd><?php the_field('ages'); ?></dd>
-            <?php endif; ?>
+              <?php if (get_field('ages')) : ?>
+                <dt>Ages:</dt>
+                <dd><?php the_field('ages'); ?></dd>
+              <?php endif; ?>
 
-            <dt>Instructor:</dt>
-            <dd>
-              <?php the_instructor_information(); ?>
-            </dd>
-          </dl>
-
+              <dt>Instructor:</dt>
+              <dd>
+                <?php the_instructor_information(); ?>
+              </dd>
+            </dl>
+          </div>
 
           <div class="description">
             <?php the_field('description'); ?>

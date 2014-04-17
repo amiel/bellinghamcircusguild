@@ -27,8 +27,9 @@ body{
 $main-section-width: 720px;
 $sidebar-width: 220px;
 
+h2{ @extend .sans; }
+
 #main{
-  h2{ @extend .sans; }
 
   float: left;
   padding-right: 130px;
