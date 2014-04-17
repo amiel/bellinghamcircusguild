@@ -458,6 +458,8 @@ form {
     form .field label {
       display: block;
       padding: 1em 0px; }
+    form .field label.checkbox {
+      padding: 0 1em; }
   form #email_label, form #email {
     display: none; }
 

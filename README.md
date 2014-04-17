@@ -12,6 +12,3 @@ Questions:
 * Classes
 * Newsletters page
 
-### TODO:
-
-* Vaudevillingham form

@@ -9,6 +9,7 @@ if ($_POST["inquiry"]) {
   $message = $_POST["inquiry"]["message"];
 
   $subject = "Website inquiry from $name";
+  $reply_to = "\"$name\" <$email>, \"Bellingham Circus Guild\" <belingham-circus-guild@googlegroups.com>";
   $email_message = "
 
 $message
@@ -22,6 +23,6 @@ Kind Regards,
 Your Website.
   ";
 
-  send_email($subject, $email_message, $_POST['email']);
+  send_email($subject, $email_message, $reply_to, $_POST['email']);
 
 }

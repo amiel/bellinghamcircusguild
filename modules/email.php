@@ -1,12 +1,12 @@
 <?php
 
-function send_email($subject, $email_message, $honeypot = "") {
+function send_email($subject, $email_message, $reply_to, $honeypot = "") {
   if (empty($honeypot)) {
     // $to = "belingham-circus-guild@googlegroups.com, website@bellinghamcircusguild.com";
     $to = "amiel.martin@gmail.com";
 
     $headers = 'From: "Guild Website" <website@bellinghamcircusguild.com>' . "\r\n" .
-        "Reply-To: \"$name\" <$email>, \"Bellingham Circus Guild\" <belingham-circus-guild@googlegroups.com>" . "\r\n" .
+        "Reply-To: $reply_to" . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     mail($to, $subject, $email_message, $headers);
