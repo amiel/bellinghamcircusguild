@@ -10,7 +10,7 @@ function register_custom_post_types() {
   $event->register();
 
   $class = new VernacularPostType('workshop');
-  // $class->slug = 'classes';
+  $class->slug = 'classes';
   $class->labels('Class', 'Classes');
   $class->register();
 }
