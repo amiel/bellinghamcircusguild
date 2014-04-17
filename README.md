@@ -10,6 +10,7 @@ Questions:
 * I made up copy for Donation page...
 * Find a performer form
 * Classes
+* Newsletters page
 
 ### TODO:
 
