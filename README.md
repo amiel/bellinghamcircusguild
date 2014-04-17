@@ -12,3 +12,7 @@ Questions:
 * Classes
 * Newsletters page
 
+# TODO
+
+* Fix empty class/event fields
+* New email lists for vham and performers
