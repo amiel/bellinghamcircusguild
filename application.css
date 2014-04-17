@@ -690,13 +690,15 @@ body.single-event #main img {
   float: left;
   margin: 0 2em 1em 0; }
 
-.user-content h2 {
-  color: #2dc4ff; }
+.user-content {
+  min-height: 1px; }
+  .user-content h2 {
+    color: #2dc4ff; }
 
 .classes.page {
   background-image: url(images/bg-classes.jpg); }
   .classes.page #bg-fade {
-    background-image: none; }
+    background-image: url(images/bg-black-fade.png); }
   .classes.page .workshop {
     border: 1px solid #2dc4ff;
     margin-bottom: 2em; }
@@ -841,7 +843,7 @@ h1#logo a {
   width: 100%;
   height: 160px;
   z-index: 5;
-  background: url(images/bg-generic-fade.png) 0px 42px fixed; }
+  background: url(images/bg-black-fade.png) 0px 42px fixed; }
 
 header {
   position: relative; }

@@ -1,7 +1,7 @@
 .classes.page{
 
   background-image: url(images/bg-classes.jpg);
-  #bg-fade{ background-image: none; }
+  #bg-fade{ background-image: url(images/bg-black-fade.png); }
 
   .workshop{
     border: 1px solid $accent-color;
@@ -23,7 +23,6 @@
         margin: 0;
         text-transform: uppercase;
       }
-
 
       dl{
         margin: 0;
