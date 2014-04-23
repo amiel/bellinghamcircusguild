@@ -4,7 +4,7 @@
 $accent-color: #2dc4ff;
 $highlight-color: #fbee1b;
 $highlight-text-color: #fcee21;
-$text-color: #fff;
+$text-color: #f2f2f2;
 $background-color: #000;
 
 $site-width: 960px;
@@ -37,6 +37,7 @@ html[lang] { margin-top: 0 !important; }
 @import "modules/location";
 @import "modules/contact";
 @import "modules/hire-a-performer";
+@import "modules/newsletters";
 @import "modules/events";
 @import "modules/event";
 @import "modules/user-content";

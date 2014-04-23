@@ -22,3 +22,7 @@ function link_to_the_field($field, $url_field) {
   the_field($field);
   if ($url) echo "</a>";
 }
+
+
+
+

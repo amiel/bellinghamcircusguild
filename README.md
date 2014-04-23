@@ -11,7 +11,10 @@ Questions:
 * Find a performer form
 * Classes
 * Newsletters page
+* Vaudevillingham rule needs more styling
+* Define button style
 
 # TODO
+Smoother animations on events page
 
 * New email lists for performers

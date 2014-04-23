@@ -27,7 +27,10 @@ body{
 $main-section-width: 720px;
 $sidebar-width: 220px;
 
-h2{ @extend .sans; }
+#main  h2{
+  @extend .sans;
+  color: $accent-color;
+}
 
 #main{
 

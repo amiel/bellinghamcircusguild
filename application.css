@@ -359,7 +359,7 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .user-content h2, .classes.page .workshop .meta h3, .classes.page .workshop .meta dl, h2 {
+.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, form .actions input, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .classes.page .workshop .meta h3, .classes.page .workshop .meta dl, #main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -398,7 +398,7 @@ ul.widgets {
     letter-spacing: 0.06em;
     -webkit-font-smoothing: antialiased;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
     background: url(images/arrow-style.png) right center no-repeat; }
     #sidebar .menu a:hover {
@@ -449,18 +449,29 @@ ul.widgets {
 form {
   padding-top: 1em; }
   form fieldset {
-    padding: 0;
+    padding: 0 0 1.5em 0;
     margin: 1.5em 0 0 0;
-    border: none; }
-    form fieldset legend {
-      font-size: 1.2em; }
+    border-style: none none solid none; }
+    form fieldset h2 {
+      margin: 0.5em 0; }
   form .field {
     margin: 0.5em 0px; }
     form .field label {
       display: block;
-      padding: 1em 0px; }
+      padding: 1em 0px 0.5em; }
+      form .field label small {
+        font-style: italic;
+        color: #d9d9d9; }
     form .field label.checkbox {
       padding: 0 1em; }
+  form .actions {
+    padding: 1em 0; }
+    form .actions input {
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 0.5em 1em;
+      background-color: #fbee1b;
+      border: none; }
   form #email_label, form #email {
     display: none; }
 
@@ -487,12 +498,12 @@ form {
       color: #fcee21;
       font-style: italic; }
       .home.page #main #sponsors .links {
-        color: white;
+        color: #f2f2f2;
         font-size: 0.9em;
         font-style: normal;
         text-transform: uppercase; }
         .home.page #main #sponsors .links a {
-          color: white; }
+          color: #f2f2f2; }
   .home.page footer nav {
     height: 142px;
     border: none;
@@ -539,6 +550,10 @@ body.location {
   padding: 0; }
 .page.contact form .actions {
   margin-left: 150px; }
+
+.campaign {
+  line-height: 125%;
+  margin: 5px; }
 
 body.events {
   background-image: url(images/bg-events.jpg); }
@@ -695,8 +710,6 @@ body.single-event #main img {
 
 .user-content {
   min-height: 1px; }
-  .user-content h2 {
-    color: #2dc4ff; }
 
 .classes.page {
   background-image: url(images/bg-classes.jpg); }
@@ -739,7 +752,7 @@ body {
   background: url(images/bg-generic.jpg) 0px 42px no-repeat fixed;
   background-size: 100% auto;
   background-color: black;
-  color: white;
+  color: #f2f2f2;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
   body p {
     line-height: 1.5em; }
@@ -752,6 +765,9 @@ body {
   padding-top: 160px;
   padding-bottom: 500px;
   overflow: hidden; }
+
+#main h2 {
+  color: #2dc4ff; }
 
 #main {
   float: left;
@@ -894,7 +910,7 @@ footer.page {
           height: 38px;
           line-height: 38px;
           text-align: center;
-          color: white;
+          color: #f2f2f2;
           text-decoration: none; }
         footer.page nav ul li a:hover {
           color: #2dc4ff; }

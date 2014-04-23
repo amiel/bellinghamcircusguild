@@ -10,7 +10,7 @@
 
       <form action="<?php bloginfo( 'stylesheet_directory' ); ?>/send-performer.php" id="new_inquiry" method="post">
         <fieldset>
-          <legend>About You</legend>
+          <h2>About You</h2>
 
           <div class='field'>
             <label class="required" for="inquiry_name">Name *</label>
@@ -32,7 +32,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>What are you looking for?</legend>
+          <h2>What are you looking for?</h2>
 
           <div class='field'>
             <label class="required" for="inquiry_type">
