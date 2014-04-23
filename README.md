@@ -14,5 +14,4 @@ Questions:
 
 # TODO
 
-* Fix empty class/event fields
-* New email lists for vham and performers
+* New email lists for performers

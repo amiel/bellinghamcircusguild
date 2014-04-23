@@ -1,6 +1,7 @@
 <?php
 
 require_once('vernacular/bootstrap.php');
+require_once('modules/helpers.php');
 require_once('modules/events.php');
 require_once('modules/workshops.php');
 
@@ -13,20 +14,6 @@ function register_custom_post_types() {
   $workshop->register();
 }
 add_action('init', 'register_custom_post_types');
-
-function title($t = null) {
-  global $aTitle;
-  if ($t) $aTitle = $t;
-  return $aTitle;
-}
-
-function get_slug() {
-  $slug = basename(get_permalink());
-  do_action('before_slug', $slug);
-  $slug = apply_filters('slug_filter', $slug);
-  do_action('after_slug', $slug);
-  return $slug;
-}
 
 
 // Register a sidebar

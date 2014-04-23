@@ -25,12 +25,12 @@
                 <dd><?php the_field('times'); ?></dd>
               <?php endif; ?>
 
-              <dt>Location:</dt>
-              <dd>
-                <a href="<?php the_field('location_url'); ?>">
-                  <?php the_field('location'); ?>
-                </a>
-              </dd>
+              <?php if (get_field('location')) : ?>
+                <dt>Location:</dt>
+                <dd>
+                    <?php link_to_the_field('location', 'location_url'); ?>;
+                </dd>
+              <?php endif; ?>
 
               <?php if (get_field('cost')) : ?>
                 <dt>Cost:</dt>

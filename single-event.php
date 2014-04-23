@@ -15,26 +15,30 @@
       <dl>
         <dt>Location:</dt>
         <dd>
-          <a href="<?php the_field('google_maps_link'); ?>">
-            <?php the_field('location'); ?>
-          </a>
+          <?php link_to_the_field('location', 'google_maps_link'); ?>
         </dd>
 
-        <dt>Tickets:</dt>
-        <dd>
-          <?php the_field('tickets_description'); ?> /
-          <a href="<?php the_field('tickets_link'); ?>">Get tickets<a/>
-        </dd>
+        <?php if (get_field('tickets_description')) : ?>
+          <dt>Tickets:</dt>
+          <dd>
+            <?php the_field('tickets_description'); ?>
+            <?php if (get_field('tickets_link')) : ?>
+              / <a href="<?php the_field('tickets_link'); ?>">Get tickets<a/>
+            <?php endif; ?>
+          </dd>
+        <?php endif; ?>
 
-        <dt>Facebook Event:</dt>
-        <dd>
-          <a href="<?php the_field('facebook_event_page_link'); ?>">
-            <?php the_field('facebook_event_page_link'); ?>
-          </a>
-        </dd>
+        <?php if (get_field('facebook_event_page_link')) : ?>
+          <dt>Facebook Event:</dt>
+          <dd>
+            <?php link_to_the_field('facebook_event_page_link', 'facebook_event_page_link'); ?>
+          </dd>
+        <? endif; ?>
 
-        <dt>Contact:</dt>
-        <dd><?php the_field('event_contact'); ?></dd>
+        <?php if (get_field('event_contact')) : ?>
+          <dt>Contact:</dt>
+          <dd><?php the_field('event_contact'); ?></dd>
+        <?php endif; ?>
       </dl>
 
       <?php $image = new VernacularImage(get_field('image')); ?>

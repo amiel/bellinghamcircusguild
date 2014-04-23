@@ -443,7 +443,8 @@ ul.widgets {
     .alert a .highlight, .home.page #main #coming-soon a .highlight, body.events #main #no-events a .highlight {
       color: #fcee21; }
     .alert a img, .home.page #main #coming-soon a img, body.events #main #no-events a img {
-      margin-left: 0.6em; }
+      margin-left: 0.6em;
+      border: 0; }
 
 form {
   padding-top: 1em; }
