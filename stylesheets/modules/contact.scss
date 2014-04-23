@@ -1,11 +1,16 @@
 .page.contact{
+  $field-indent: 100px;
+
   form{
-    label{
-      width: 150px;
-      float: left;
-      padding: 0;
+    .field{
+      margin-bottom: 1.2em;
+      label{
+        width: $field-indent;
+        float: left;
+        padding: 0;
+      }
     }
 
-    .actions{ margin-left: 150px; }
+    .actions{ margin-left: $field-indent; }
   }
 }
