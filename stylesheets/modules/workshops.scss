@@ -3,37 +3,40 @@
   background-image: url(images/bg-classes.jpg);
   #bg-fade{ background-image: url(images/bg-black-fade.png); }
 
-  .workshop{
-    border: 1px solid $accent-color;
-    margin-bottom: 2em;
+  #main{
 
-    .meta{
-      background-color: $accent-color;
-      padding: 1em;
+    .workshop{
+      border: 1px solid $accent-color;
+      margin-bottom: 2em;
 
-      h2{
-        @include markus(2.4em);
-        color: $highlight-text-color;
-        margin: 0;
+      .meta{
+        background-color: $accent-color;
+        padding: 1em;
+
+        h2{
+          @include markus(2.4em);
+          color: $highlight-text-color;
+          margin: 0;
+        }
+
+        h3{
+          @extend .sans;
+          color: #000;
+          margin: 0;
+          text-transform: uppercase;
+        }
+
+        dl{
+          margin: 0;
+          overflow: hidden;
+          @extend .sans;
+          dt{ float: left; margin-right: 0.5em; color: #000; }
+          dd{ margin-left: 6em; }
+        }
       }
 
-      h3{
-        @extend .sans;
-        color: #000;
-        margin: 0;
-        text-transform: uppercase;
-      }
-
-      dl{
-        margin: 0;
-        overflow: hidden;
-        @extend .sans;
-        dt{ float: left; margin-right: 0.5em; color: #000; }
-        dd{ margin-left: 6em; }
-      }
+      .description{ padding: 1em; }
     }
-
-    .description{ padding: 1em; }
   }
 
 }

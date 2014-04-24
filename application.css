@@ -359,7 +359,7 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, form .actions input, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .classes.page .workshop .meta h3, .classes.page .workshop .meta dl, #main h2 {
+.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, form .actions input, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .classes.page #main .workshop .meta h3, .classes.page #main .workshop .meta dl, #main h2, blockquote {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
@@ -408,6 +408,12 @@ ul.widgets {
   color: #fcee21;
   font-style: italic;
   font-size: .9em; }
+  .widget_text h4 {
+    margin: 0;
+    line-height: 1.5em;
+    font-style: normal; }
+  .widget_text p {
+    margin-top: 0; }
 
 .alert, .home.page #main #coming-soon, body.events #main #no-events {
   text-align: center;
@@ -554,7 +560,7 @@ body.location {
   margin-left: 100px; }
 
 .campaign {
-  line-height: 125%;
+  line-height: 1.5em;
   margin: 5px; }
 
 body.events {
@@ -712,39 +718,49 @@ body.single-event #main img {
 
 .user-content {
   min-height: 1px; }
+  .user-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .user-content ul li {
+      margin-bottom: 0.8em; }
 
 .classes.page {
   background-image: url(images/bg-classes.jpg); }
   .classes.page #bg-fade {
     background-image: url(images/bg-black-fade.png); }
-  .classes.page .workshop {
+  .classes.page #main .workshop {
     border: 1px solid #2dc4ff;
     margin-bottom: 2em; }
-    .classes.page .workshop .meta {
+    .classes.page #main .workshop .meta {
       background-color: #2dc4ff;
       padding: 1em; }
-      .classes.page .workshop .meta h2 {
+      .classes.page #main .workshop .meta h2 {
         font-family: markus_inkregular;
         font-size: 2.4em;
         letter-spacing: 0.06em;
         -webkit-font-smoothing: antialiased;
         color: #fcee21;
         margin: 0; }
-      .classes.page .workshop .meta h3 {
+      .classes.page #main .workshop .meta h3 {
         color: #000;
         margin: 0;
         text-transform: uppercase; }
-      .classes.page .workshop .meta dl {
+      .classes.page #main .workshop .meta dl {
         margin: 0;
         overflow: hidden; }
-        .classes.page .workshop .meta dl dt {
+        .classes.page #main .workshop .meta dl dt {
           float: left;
           margin-right: 0.5em;
           color: #000; }
-        .classes.page .workshop .meta dl dd {
+        .classes.page #main .workshop .meta dl dd {
           margin-left: 6em; }
-    .classes.page .workshop .description {
+    .classes.page #main .workshop .description {
       padding: 1em; }
+
+.page.volunteer h2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  padding-top: 1em; }
 
 html, body {
   position: relative;
@@ -768,14 +784,13 @@ body {
   padding-bottom: 500px;
   overflow: hidden; }
 
-#main h2 {
-  color: #2dc4ff; }
-
 #main {
   float: left;
   padding-right: 130px;
   margin-left: 10px;
   width: 720px; }
+  #main h2 {
+    color: #2dc4ff; }
   #main img {
     border: 1px solid rgba(255, 255, 255, 0.6); }
   #main img.arrow {
@@ -791,6 +806,8 @@ hr {
   background-color: rgba(255, 255, 255, 0.6); }
 
 blockquote {
+  color: #fbee1b;
+  font-size: 1.3em;
   font-style: italic; }
 
 #navbar {

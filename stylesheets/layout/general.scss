@@ -27,12 +27,11 @@ body{
 $main-section-width: 720px;
 $sidebar-width: 220px;
 
-#main  h2{
-  @extend .sans;
-  color: $accent-color;
-}
-
 #main{
+ h2{
+    @extend .sans;
+    color: $accent-color;
+  }
 
   float: left;
   padding-right: 130px;
@@ -50,4 +49,9 @@ $sidebar-width: 220px;
 
 hr{ height: 1px; border: none; background-color: $border-color; }
 
-blockquote{ font-style: italic; }
+blockquote{
+  @extend .sans;
+  color: $highlight-color;
+  font-size: 1.3em;
+  font-style: italic;
+}
