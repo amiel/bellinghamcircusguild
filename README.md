@@ -15,6 +15,7 @@ Questions:
 * Fix home page about link javascirpt
 * make homepage sponsor links work
 * fade button hover
+* Featured image
 
 # Later
 
