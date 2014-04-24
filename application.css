@@ -479,7 +479,10 @@ form {
       text-transform: uppercase;
       padding: 0.5em 1em;
       background-color: #fbee1b;
-      border: none; }
+      border: none;
+      -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+      -moz-transition: background-color 0.3s ease, color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease; }
       form .actions input:hover {
         background-color: #2dc4ff;
         color: #fff; }

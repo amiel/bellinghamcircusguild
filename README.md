@@ -12,7 +12,6 @@ Questions:
 * Make Vham look like an event
 * Fix home page about link javascirpt
 * make homepage sponsor links work
-* fade button hover
 * Featured image
 * Browser testing
 

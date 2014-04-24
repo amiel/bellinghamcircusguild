@@ -40,6 +40,9 @@ form{
       padding: 0.5em 1em;
       background-color: $highlight-color;
       border: none;
+
+      @include transition(background-color 0.3s ease, color 0.3s ease);
+
       &:hover{
         background-color: $accent-color;
         color: #fff;
