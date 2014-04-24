@@ -41,11 +41,14 @@
         <?php endif; ?>
       </dl>
 
-      <?php $image = new VernacularImage(get_field('image')); ?>
-      <img src="<?php echo $image->crop(600, 400, false); ?>" />
-      <p class="description">
+      <?php if (get_field('image')) : ?>
+        <?php $image = new VernacularImage(get_field('image')); ?>
+        <img src="<?php echo $image->crop(600, 400, false); ?>" />
+      <?php endif; ?>
+
+      <div class="description user-content">
         <?php the_field('description'); ?>
-      </p>
+      </div>
     </section>
     <?php get_sidebar(); ?>
   </div>
