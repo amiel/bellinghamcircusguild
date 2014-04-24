@@ -611,7 +611,8 @@ body.events {
         display: block;
         padding: 12px 0 12px 24px;
         font-size: 2em;
-        border-bottom: 1px solid #fff; }
+        border-bottom: 1px solid #fff;
+        max-height: none; }
         body.events #main #vaudevillingham .times .ampersand {
           display: inline-block;
           color: transparent;
@@ -692,9 +693,12 @@ body.events {
             width: 16px;
             background: url(images/arrow-blue.png) center center no-repeat; }
       body.events #main section.event .times {
-        display: none; }
+        max-height: 0;
+        -webkit-transition: max-height 0.2s ease-out;
+        -moz-transition: max-height 0.2s ease-out;
+        transition: max-height 0.2s ease-out; }
       body.events #main section.event:hover .times {
-        display: block; }
+        max-height: 2em; }
 
 body.single-event #main h1 {
   font-family: markus_inkregular;

@@ -51,6 +51,7 @@ body.events{
         padding: 12px 0 12px 24px;
         font-size: 2em;
         border-bottom: 1px solid #fff;
+        max-height: none;
 
         .ampersand{
           display: inline-block;
@@ -129,8 +130,14 @@ body.events{
         }
       }
 
-      .times{ display: none; }
-      &:hover .times{ display: block; }
+      .times{
+        max-height: 0;
+        @include transition(max-height 0.2s ease-out);
+      }
+
+      &:hover .times{
+        max-height: 2em;
+      }
     }
   }
 }
