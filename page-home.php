@@ -2,7 +2,7 @@
 <div class="wrapper">
   <div id="main">
 
-    <section id="mission" onclick="document.location = '/about'">
+    <section id="mission">
       <h2>Bellingham Circus Guild</h2>
       <p>We are jugglers, acrobats, aerialists, stilters, clowns, myth makers, experimental multi-medium theatricalists, and so very much more.</p>
     </section>
@@ -26,9 +26,9 @@
     <section id="sponsors">
       Thank you to our sponsors:
       <span class="links">
-        <a href="#">Mallard Ice Cream</a>,
-        <a href="#">Casa Que Pasa</a>,
-        <a href="#">Living Earth Herbs</a> ...
+        <a href="http://www.mallardicecream.com/">Mallard Ice Cream</a>,
+        <a href="http://www.casaquepasarocks.com/">Casa Que Pasa</a>,
+        <a href="http://www.livingearthherbs.com/">Living Earth Herbs</a> ...
       </span>
     </section>
   </div>
