@@ -8,12 +8,10 @@ Questions:
 
 # TODO
 
-* Make Vham look like an event
-* Featured image
 * Browser testing
 
 # Later
 
-* Featured photo on workshops page
+* Featured photo everywhere?
 * New email lists for performers
 * ACF homepage sponsor links

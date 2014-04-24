@@ -45,6 +45,8 @@ $sidebar-width: 220px;
 #sidebar{
   float: left;
   width: $sidebar-width;
+
+  img{ border: 1px solid $border-color; }
 }
 
 hr{ height: 1px; border: none; background-color: $border-color; }
@@ -54,4 +56,12 @@ blockquote{
   color: $highlight-color;
   font-size: 1.3em;
   font-style: italic;
+}
+
+a{
+  color: $highlight-color;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }

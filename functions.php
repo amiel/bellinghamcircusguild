@@ -16,17 +16,22 @@ function register_custom_post_types() {
 add_action('init', 'register_custom_post_types');
 
 
+if (function_exists('add_image_size')) {
+  add_image_size('body-image', 600, 400);
+  add_image_size('sidebar-image', 220);
+}
+
 // Register a sidebar
-if ( function_exists( 'register_sidebar' ) ) {
-  register_sidebar( array(
+if (function_exists('register_sidebar')) {
+  register_sidebar(array(
     'before_widget' => '<li id="%1$s" class="widget %2$s">',
     'after_widget'  => '</li>',
     'before_title'  => '<h4 class="title">',
     'after_title'   => '</h4>',
-  ) );
+  ));
 }
 
-if ( function_exists('add_theme_support') ) {
+if (function_exists('add_theme_support')) {
   add_theme_support('nav-menus');
   add_theme_support('post-thumbnails');
 }

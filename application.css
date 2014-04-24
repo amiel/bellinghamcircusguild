@@ -361,15 +361,9 @@ html[lang] {
 body {
   font-size: 16px; }
 
-.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, form .actions input, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, .classes.page #main .workshop .meta h3, .classes.page #main .workshop .meta dl, #main h2, blockquote {
+.sans, .alert a, .home.page #main #coming-soon a, body.events #main #no-events a, form .actions input, .home.page #main #sponsors .links, body.events #main section.event .info, body.single-event #main dl, body.page.vaudevillingham #main dl, .classes.page #main .workshop .meta h3, .classes.page #main .workshop .meta dl, #main h2, blockquote {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
-
-a {
-  color: #fbee1b;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
 
 ul.widgets {
   list-style-type: none;
@@ -703,29 +697,29 @@ body.events {
       body.events #main section.event:hover .times {
         max-height: 2em; }
 
-body.single-event #main h1 {
+body.single-event #main h1, body.page.vaudevillingham #main h1 {
   font-family: markus_inkregular;
   font-size: 3.1em;
   letter-spacing: 0.06em;
   -webkit-font-smoothing: antialiased;
   margin: 10px 0 0;
   color: #fbee1b; }
-body.single-event #main h2 {
+body.single-event #main h2, body.page.vaudevillingham #main h2 {
   font-size: 1.3em;
   margin: 0;
   color: #2dc4ff; }
-body.single-event #main dl {
+body.single-event #main dl, body.page.vaudevillingham #main dl {
   overflow: hidden;
   padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
-  body.single-event #main dl dt {
+  body.single-event #main dl dt, body.page.vaudevillingham #main dl dt {
     float: left;
     margin-right: 0.5em;
     color: #2dc4ff; }
-  body.single-event #main dl dd {
+  body.single-event #main dl dd, body.page.vaudevillingham #main dl dd {
     margin-left: 4em; }
-body.single-event #main img {
+body.single-event #main img, body.page.vaudevillingham #main img {
   float: left;
   margin: 0 2em 1em 0; }
 
@@ -812,6 +806,8 @@ body {
 #sidebar {
   float: left;
   width: 220px; }
+  #sidebar img {
+    border: 1px solid rgba(255, 255, 255, 0.6); }
 
 hr {
   height: 1px;
@@ -822,6 +818,12 @@ blockquote {
   color: #fbee1b;
   font-size: 1.3em;
   font-style: italic; }
+
+a {
+  color: #fbee1b;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 #navbar {
   position: fixed;

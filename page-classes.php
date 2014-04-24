@@ -56,9 +56,12 @@
 
       <?php endforeach; ?>
     <?php endif; ?>
-
-
   </section>
+
+  <?php // reload the current post because of all that classes stuff ?>
+  <?php if (have_posts()) while (have_posts()) : the_post(); ?>
+    <?php get_sidebar('image'); ?>
+  <?php endwhile; ?>
 </div>
 
 <?php get_footer(); ?>
