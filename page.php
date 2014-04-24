@@ -7,7 +7,13 @@
       <div class="user-content">
         <?php the_content(); ?>
       </div>
+
+      <?php if (has_post_thumbnail()) : ?>
+        <?php the_post_thumbnail('body-image'); ?>
+      <?php endif; ?>
+
     </section>
+
     <?php get_sidebar(); ?>
   </div>
 <?php endwhile; ?>
