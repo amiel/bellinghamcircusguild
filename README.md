@@ -6,7 +6,6 @@ Website source for http://bellinghamcircusguild.com
 # TODO
 
 * Browser testing
-* Google drive vham form
 
 # Later
 
