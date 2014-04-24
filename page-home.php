@@ -2,7 +2,7 @@
 <div class="wrapper">
   <div id="main">
 
-    <section id="mission">
+    <section id="mission" onclick="document.location = '/about'">
       <h2>Bellingham Circus Guild</h2>
       <p>We are jugglers, acrobats, aerialists, stilters, clowns, myth makers, experimental multi-medium theatricalists, and so very much more.</p>
     </section>

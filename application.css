@@ -478,6 +478,9 @@ form {
       padding: 0.5em 1em;
       background-color: #fbee1b;
       border: none; }
+      form .actions input:hover {
+        background-color: #2dc4ff;
+        color: #fff; }
   form #email_label, form #email {
     display: none; }
 
@@ -498,7 +501,8 @@ form {
       text-shadow: none;
       background-image: url(images/home-banner.png);
       width: 623px;
-      height: 422px; }
+      height: 422px;
+      cursor: pointer; }
     .home.page #main #sponsors {
       margin-top: 2em;
       color: #fcee21;
@@ -957,6 +961,7 @@ footer.page {
         height: 44px;
         line-height: 52px;
         background: center center no-repeat;
+        margin-right: 14px;
         width: 166px;
         background-image: url(images/get-directions.png); }
     footer.page #sub-footer .twitter, footer.page #sub-footer .facebook, footer.page #sub-footer .email {
@@ -966,7 +971,8 @@ footer.page {
       display: inline-block;
       height: 44px;
       line-height: 52px;
-      background: center center no-repeat; }
+      background: center center no-repeat;
+      margin-right: 14px; }
     footer.page #sub-footer .twitter {
       width: 25px;
       background-image: url(images/icon-twitter.png); }

@@ -40,6 +40,10 @@ form{
       padding: 0.5em 1em;
       background-color: $highlight-color;
       border: none;
+      &:hover{
+        background-color: $accent-color;
+        color: #fff;
+      }
     }
 
   }

@@ -25,7 +25,7 @@
         </div>
 
         <div class="copyright">
-          <span>&copy;Copyright 2013, Bellingham Circus Guild</span>
+          <span>&copy; Copyright 2013, Bellingham Circus Guild</span>
         </div>
       </div>
     </section>
