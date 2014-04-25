@@ -54,12 +54,15 @@ footer.page{
     }
 
     @mixin footer-image-replacement {
-      @include hide-text;
       display: inline-block;
       height: $sub-footer-height - 8px; // I have no idea...
       line-height: $sub-footer-height;
       background: center center no-repeat;
       margin-right: 14px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 110%;
+      vertical-align: middle;
     }
 
     .directions {
@@ -67,7 +70,6 @@ footer.page{
       a{
         @include footer-image-replacement;
         width: 166px;
-        // height: 35px;
         background-image: url(images/get-directions.png);
       }
     }

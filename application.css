@@ -965,25 +965,27 @@ footer.page {
     footer.page #sub-footer .directions {
       padding-right: 30px; }
       footer.page #sub-footer .directions a {
-        color: transparent;
-        font: 0/0 a;
-        text-shadow: none;
         display: inline-block;
         height: 44px;
         line-height: 52px;
         background: center center no-repeat;
         margin-right: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-indent: 110%;
+        vertical-align: middle;
         width: 166px;
         background-image: url(images/get-directions.png); }
     footer.page #sub-footer .twitter, footer.page #sub-footer .facebook, footer.page #sub-footer .email {
-      color: transparent;
-      font: 0/0 a;
-      text-shadow: none;
       display: inline-block;
       height: 44px;
       line-height: 52px;
       background: center center no-repeat;
-      margin-right: 14px; }
+      margin-right: 14px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 110%;
+      vertical-align: middle; }
     footer.page #sub-footer .twitter {
       width: 25px;
       background-image: url(images/icon-twitter.png); }
