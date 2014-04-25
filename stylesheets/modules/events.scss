@@ -28,7 +28,7 @@ body.events{
     #vaudevillingham{
       background: #000;
       width: $events-column-width * 2 + $events-gutter-width;
-      @include markus(1.4em);
+      @include markus(1.3em);
       padding: 44px 48px;
 
       h2{
