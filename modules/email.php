@@ -2,8 +2,8 @@
 
 function send_email($subject, $email_message, $reply_to, $honeypot = "") {
   if (empty($honeypot)) {
-    // $to = "belingham-circus-guild@googlegroups.com, website@bellinghamcircusguild.com";
-    $to = "amiel.martin@gmail.com";
+    $to = "belingham-circus-guild@googlegroups.com, website@bellinghamcircusguild.com";
+    /* $to = "amiel.martin@gmail.com"; */
 
     $headers = 'From: "Guild Website" <website@bellinghamcircusguild.com>' . "\r\n" .
         "Reply-To: $reply_to" . "\r\n" .
