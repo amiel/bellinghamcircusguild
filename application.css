@@ -896,7 +896,7 @@ h1#logo a {
   width: 100%;
   height: 160px;
   z-index: 5;
-  background: url(images/bg-black-fade.png) 0px 42px fixed; }
+  background: url(images/bg-black-fade.png) 0px 20px fixed; }
 
 header {
   position: relative; }
