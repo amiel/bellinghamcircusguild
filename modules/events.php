@@ -54,3 +54,47 @@ function events() {
   usort($posts, 'event_cmp');
   return $posts;
 }
+
+
+
+
+function events_columns($columns) {
+  $columns = array(
+    'cb'    => '<input type="checkbox" />',
+    'title'   => 'Title',
+    'author'  =>  'Author',
+    'start_on' => 'First date',
+    'end_on' => 'Last date',
+    'date'    =>  'Date',
+  );
+  return $columns;
+}
+
+function admin_format_date($date_string) {
+  $date = strtotime($date_string);
+  return date("M j, Y", $date);
+}
+
+function manage_event_columns($column) {
+  global $post;
+  if ($column == 'start_on') {
+    echo admin_format_date(get_field('start_on', $post->ID));
+  } elseif ($column == 'end_on') {
+    echo admin_format_date(get_field('end_on', $post->ID));
+  }
+}
+
+function event_sortable_columns($columns) {
+  $columns['start_on'] = 'start_on';
+  return $columns;
+}
+
+function handle_event_sorting($vars){
+  if (isset($vars['orderby']) && 'start_on' == $vars['orderby']) {
+    $vars = array_merge($vars, array(
+      'meta_key' => 'start_on',
+      'orderby'  => 'meta_value_num'
+    ));
+  }
+  return $vars;
+}

@@ -15,6 +15,13 @@ function register_custom_post_types() {
 }
 add_action('init', 'register_custom_post_types');
 
+// All found in modules/events.php
+
+add_filter("manage_edit-event_columns", "events_columns");
+add_filter("manage_edit-event_sortable_columns", "event_sortable_columns" );
+add_action('manage_event_posts_custom_column', 'manage_event_columns');
+add_filter('request', 'handle_event_sorting');
+
 
 if (function_exists('add_image_size')) {
   add_image_size('body-image', 600, 400);
