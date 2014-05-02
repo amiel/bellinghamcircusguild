@@ -18,6 +18,14 @@
 
         <dt>Tickets:</dt>
         <dd>At the door</dd>
+
+
+        <dt>Performers:</dt>
+        <dd>
+          <a href="/about/vaudevillingham/performer-responsibilities/">Responsibilities</a> /
+          <a href="/wp-content/uploads/2014/04/Vaudevillingham-Performer-Waiver-1.docx">Waiver</a> /
+          <a href="/about/vaudevillingham/performer-application/">Application</a>
+        </dd>
       </dl>
 
       <?php if (has_post_thumbnail()) : ?>
