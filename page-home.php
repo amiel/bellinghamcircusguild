@@ -25,11 +25,11 @@
 
     <section id="sponsors">
       Thank you to our sponsors:
-      <span class="links">
-        <a href="http://www.mallardicecream.com/">Mallard Ice Cream</a>,
-        <a href="http://www.casaquepasarocks.com/">Casa Que Pasa</a>,
-        <a href="http://www.livingearthherbs.com/">Living Earth Herbs</a> ...
-      </span>
+      <a href="http://www.casaquepasarocks.com/" id="casa-que-pasa" target="_blank">Casa Que Pasa</a>
+
+      <div class="links">
+        <a href="/support-us/sponsors/">And many more &#8230;</a>
+      </div>
     </section>
   </div>
 </div>

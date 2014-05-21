@@ -27,6 +27,17 @@ $home-footer-nav-height: 142px;
       margin-top: 2em;
       color: $highlight-text-color;
       font-style: italic;
+      text-align: center;
+
+      #casa-que-pasa{
+        @include hide-text;
+        background-image: url(images/sponsors/casa.png);
+        height: 97px;
+        width: 318px;
+        display: block;
+        margin: 12px auto;
+        opacity: 0.7;
+      }
 
       .links{
         @extend .sans;
