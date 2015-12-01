@@ -33,7 +33,7 @@
           <dd>
             <?php link_to_the_field('facebook_event_page_link', 'facebook_event_page_link'); ?>
           </dd>
-        <? endif; ?>
+        <?php endif; ?>
 
         <?php if (get_field('event_contact')) : ?>
           <dt>Contact:</dt>
