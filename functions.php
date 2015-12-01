@@ -4,6 +4,7 @@ require_once('vernacular/bootstrap.php');
 require_once('modules/helpers.php');
 require_once('modules/events.php');
 require_once('modules/workshops.php');
+require_once('modules/acf.php');
 
 function register_custom_post_types() {
   $event = new VernacularPostType('event');
