@@ -15,20 +15,22 @@ function send_email($subject, $email_message, $reply_to, $honeypot = "") {
 }
 
 function _do_send_email($subject, $message, $reply_to) {
-  /* $to = "belingham-circus-guild@googlegroups.com"; */
-  /* $cc = "website@bellinghamcircusguild.com"; */
-  $to = "amiel.martin@gmail.com";
+  $website = "website@bellinghamcircusguild.com";
+
+  $to = "belingham-circus-guild@googlegroups.com";
+  $cc = $website;
+  /* $to = "amiel.martin@gmail.com"; */
 
   $api_key = constant('BCG_SENDGRID_API_KEY');
   $url = 'https://api.sendgrid.com/api/mail.send.json';
 
+  $headers = array("Authorization: Bearer $api_key");
+
   $params = array(
     'to' => $to, 'cc' => $cc, 'subject' => $subject, 'replyto' => $reply_to,
-    'fromname' => "BCG Website", 'from' => 'website@bellinghamcircusguild.com',
+    'fromname' => "BCG Website", 'from' => $website,
     'text' => $message,
   );
-
-  $headers = array("Authorization: Bearer $api_key");
 
   $session = curl_init($url);
   curl_setopt($session, CURLOPT_POST, true);
