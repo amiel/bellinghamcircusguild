@@ -14,7 +14,8 @@ if ($_POST["inquiry"]) {
   $description = $_POST["inquiry"]["description"];
 
   $subject = "Performer request from $name";
-  $reply_to = "\"$name\" <$email>, \"Bellingham Circus Guild\" <belingham-circus-guild@googlegroups.com>";
+  // apparently, only one email address is supported
+  $reply_to = $email;
   $email_message = "
 
 Type: $type
