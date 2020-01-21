@@ -24,11 +24,10 @@
     <?php endif; _loop::reset(); ?>
 
     <section id="sponsors">
-      Thank you to our sponsors:
-      <a href="http://www.casaquepasarocks.com/" id="casa-que-pasa" target="_blank">Casa Que Pasa</a>
-
       <div class="links">
-        <a href="/support-us/sponsors/">And many more &#8230;</a>
+        <a href="/support-us/sponsors/">
+          Thank you to our sponsors!
+        </a>
       </div>
     </section>
   </div>
