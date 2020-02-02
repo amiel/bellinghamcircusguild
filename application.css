@@ -1008,3 +1008,10 @@ footer.page {
       background-image: url(images/icon-email.png); }
     footer.page #sub-footer .copyright span {
       padding-left: 30px; }
+
+.page.home .user-content{
+      margin-top: 2em;
+      text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+    }
