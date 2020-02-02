@@ -23,12 +23,8 @@
       </section>
     <?php endif; _loop::reset(); ?>
 
-    <section id="sponsors">
-      <div class="links">
-        <a href="/support-us/sponsors/">
-          Thank you to our sponsors!
-        </a>
-      </div>
+    <section class="user-content">
+      <?php the_content(); ?>
     </section>
   </div>
 </div>

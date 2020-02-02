@@ -23,6 +23,12 @@ $home-footer-nav-height: 142px;
       @extend .alert;
     }
 
+    .user-content{
+      @extend .sans;
+      margin-top: 2em;
+      text-align: center;
+    }
+
     #sponsors{
       margin-top: 2em;
       color: $highlight-text-color;
